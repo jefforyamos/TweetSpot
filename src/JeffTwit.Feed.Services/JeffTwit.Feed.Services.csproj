@@ -5,4 +5,8 @@
     <RootNamespace>JeffTwit</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JeffTwit.Primatives\JeffTwit.Primatives.csproj" />
+  </ItemGroup>
+
 </Project>
