@@ -13,6 +13,12 @@ namespace JeffTwit.Components
 {
     public class TwitterFeedProviderTesting
     {
+        public TwitterFeedProviderTesting()
+        {
+            
+        }
+
+
         [Fact]
         public async Task Run_CancelAfterFiveTweets_OnlyDeliversFive()
         {
@@ -24,6 +30,7 @@ namespace JeffTwit.Components
                 list.Add(item);
                 if( list.Count > 4 ) cancel.Cancel();
             }
+            Assert.Equal(5, list.Count);
         }
     }
 }
