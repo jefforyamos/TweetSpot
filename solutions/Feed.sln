@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffTwit.Feed", "..\src\JeffTwit.Feed\JeffTwit.Feed.csproj", "{1106B477-F1DD-44DC-974A-F93E4FA55EEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Feed", "..\src\TweetSpot.Feed\TweetSpot.Feed.csproj", "{1106B477-F1DD-44DC-974A-F93E4FA55EEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffTwit.Feed.Services", "..\src\JeffTwit.Feed.Services\JeffTwit.Feed.Services.csproj", "{D0BF297A-2D48-4765-A930-0E2F532A8E81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Feed.Services", "..\src\TweetSpot.Feed.Services\TweetSpot.Feed.Services.csproj", "{D0BF297A-2D48-4765-A930-0E2F532A8E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffTwit.Feed.Services.xunit", "..\tests\JeffTwit.Feed.Services.xunit\JeffTwit.Feed.Services.xunit.csproj", "{8AB09F9B-A751-4DD1-9CCF-02D10F893372}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Feed.Services.xunit", "..\tests\TweetSpot.Feed.Services.xunit\TweetSpot.Feed.Services.xunit.csproj", "{8AB09F9B-A751-4DD1-9CCF-02D10F893372}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffTwit.Primatives", "..\src\JeffTwit.Primatives\JeffTwit.Primatives.csproj", "{7096C0A2-6471-4D7E-BE71-2D611B3FC3E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Primatives", "..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj", "{7096C0A2-6471-4D7E-BE71-2D611B3FC3E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

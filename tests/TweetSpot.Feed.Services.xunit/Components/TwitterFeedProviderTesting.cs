@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.Design;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
+using TweetSpot.ServiceBus.Commands;
+using TweetSpot.ServiceBus.Events;
+using Xunit;
+
+namespace TweetSpot.Components
+{
+    public class TwitterFeedProviderTesting
+    {
+        public TwitterFeedProviderTesting()
+        {
+            
+        }
+
+
+        [Fact]
+        public async Task Run_CancelAfterFiveTweets_OnlyDeliversFive()
+        {
+            var svc = new TwitterFeedProvider();
+            var cancel = new CancellationTokenSource(TimeSpan.FromSeconds(3));
+            var list = new List<IProcessIncomingTweet>();
+            await foreach (var item in svc.ReadAsync(cancel.Token))
+            {
+                list.Add(item);
+                if( list.Count > 4 ) cancel.Cancel();
+            }
+            Assert.Equal(5, list.Count);
+        }
+    }
+}

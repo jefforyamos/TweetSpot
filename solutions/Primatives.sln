@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffTwit.Primatives", "..\src\JeffTwit.Primatives\JeffTwit.Primatives.csproj", "{B1505978-90CC-4006-9253-0C37B955309E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Primatives", "..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj", "{B1505978-90CC-4006-9253-0C37B955309E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffTwit.Primatives.xunit", "..\tests\JeffTwit.Primatives.xunit\JeffTwit.Primatives.xunit.csproj", "{05517F16-40F5-4837-B1D6-E54C03918CCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Primatives.xunit", "..\tests\TweetSpot.Primatives.xunit\TweetSpot.Primatives.xunit.csproj", "{05517F16-40F5-4837-B1D6-E54C03918CCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
