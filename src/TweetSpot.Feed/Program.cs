@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TweetSpot.BackgroundServices;
 using TweetSpot.Components;
 using TweetSpot.Models;
 
@@ -31,7 +32,7 @@ namespace TweetSpot.Feed
                     services.AddSingleton<ITwitterFeedConfiguration, TwitterFeedConfiguration>();
                     services.AddTransient<ITwitterFeedProvider, TwitterFeedProvider>();
                     services.AddTransient<ITwitterFeedConsumer, TwitterFeedToLoggingConsumer>();
-                    services.AddHostedService<Worker>();
+                    services.AddHostedService<FeedBackgroundService>();
                 });
     }
 }

@@ -1,22 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TweetSpot.Components;
-using TweetSpot.Models;
 
-namespace TweetSpot.Feed
+namespace TweetSpot.BackgroundServices
 {
-    public class Worker : BackgroundService
+    public class FeedBackgroundService : BackgroundService
     {
-        private readonly ILogger<Worker> _logger;
+        private readonly ILogger<FeedBackgroundService> _logger;
         private readonly ITwitterFeedProvider _provider;
         private readonly ITwitterFeedConsumer _consumer;
 
-        public Worker(ILogger<Worker> logger, ITwitterFeedProvider provider, ITwitterFeedConsumer consumer)
+        public FeedBackgroundService(ILogger<FeedBackgroundService> logger, ITwitterFeedProvider provider, ITwitterFeedConsumer consumer)
         {
             _logger = logger;
             _provider = provider;
@@ -31,7 +28,5 @@ namespace TweetSpot.Feed
                 await _consumer.ConsumeAsync(_provider, stoppingToken);
             }
         }
-
-    
     }
 }
