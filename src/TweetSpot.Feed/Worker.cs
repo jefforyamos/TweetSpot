@@ -5,16 +5,22 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TweetSpot.Components;
+using TweetSpot.Models;
 
 namespace TweetSpot.Feed
 {
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
+        private readonly ITwitterFeedProvider _provider;
+        private readonly ITwitterFeedConsumer _consumer;
 
-        public Worker(ILogger<Worker> logger)
+        public Worker(ILogger<Worker> logger, ITwitterFeedProvider provider, ITwitterFeedConsumer consumer)
         {
             _logger = logger;
+            _provider = provider;
+            _consumer = consumer;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -22,8 +28,10 @@ namespace TweetSpot.Feed
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(1000, stoppingToken);
+                await _consumer.ConsumeAsync(_provider, stoppingToken);
             }
         }
+
+    
     }
 }

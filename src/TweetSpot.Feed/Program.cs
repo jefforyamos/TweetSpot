@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TweetSpot.Components;
+using TweetSpot.Models;
 
 namespace TweetSpot.Feed
 {
@@ -16,8 +19,18 @@ namespace TweetSpot.Feed
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((context, builder) =>
+                {
+                    if (context.HostingEnvironment.IsDevelopment())
+                    {
+                        builder.AddUserSecrets<TwitterFeedProvider>();
+                    }
+                } )
                 .ConfigureServices((hostContext, services) =>
                 {
+                    services.AddSingleton<ITwitterFeedConfiguration, TwitterFeedConfiguration>();
+                    services.AddTransient<ITwitterFeedProvider, TwitterFeedProvider>();
+                    services.AddTransient<ITwitterFeedConsumer, TwitterFeedToLoggingConsumer>();
                     services.AddHostedService<Worker>();
                 });
     }

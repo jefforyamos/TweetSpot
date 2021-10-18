@@ -8,4 +8,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TweetSpot.Feed.Services\TweetSpot.Feed.Services.csproj" />
+    <ProjectReference Include="..\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
+  </ItemGroup>
 </Project>
