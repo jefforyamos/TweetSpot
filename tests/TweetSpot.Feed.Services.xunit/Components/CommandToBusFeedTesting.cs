@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xunit;
 
 namespace TweetSpot.Components
@@ -12,7 +8,7 @@ namespace TweetSpot.Components
         [Fact]
         public async Task SubmittedToBus_SingleMessage_SubmittedIntact()
         {
-
+            await Task.CompletedTask;
         }
     }
 }

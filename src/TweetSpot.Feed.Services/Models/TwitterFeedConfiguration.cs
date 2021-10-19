@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 
 namespace TweetSpot.Models
 {
@@ -7,10 +7,12 @@ namespace TweetSpot.Models
     {
         private readonly IConfiguration _configuration;
         private const string TwitterBearerTokenKey = "TwitterBearerToken";
+        private const string SampledStreamUriDefault = "https://api.twitter.com/2/tweets/sample/stream";
 
-        public TwitterFeedConfiguration(IConfiguration configuration )
+        public TwitterFeedConfiguration(IConfiguration configuration)
         {
             _configuration = configuration;
+            SampledStreamUri = new Uri(SampledStreamUriDefault);
         }
 
         public string TwitterBearerToken
@@ -18,11 +20,11 @@ namespace TweetSpot.Models
             get
             {
                 var token = _configuration[TwitterBearerTokenKey];
-                if (token == null ) throw new InvalidOperationException($"Invalid configuration.  {TwitterBearerTokenKey} user secret is not set.");
+                if (token == null) throw new InvalidOperationException($"Invalid configuration.  {TwitterBearerTokenKey} user secret is not set.");
                 return token;
             }
         }
 
-
+        public Uri SampledStreamUri { get; }
     }
 }

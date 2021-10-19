@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.Design;
-using System.Runtime.CompilerServices;
-using System.Security.Authentication.ExtendedProtection;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using TweetSpot.ServiceBus.Commands;
-using TweetSpot.ServiceBus.Events;
+using System;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -30,16 +19,16 @@ namespace TweetSpot.Components
         //[Fact]
         //public async Task Run_CancelAfterFiveTweets_OnlyDeliversFive()
         //{
-            // _output.WriteLine("Starting test");
-            // var svc = new TwitterFeedProvider();
-            // var cancel = new CancellationTokenSource(TimeSpan.FromSeconds(3));
-            // var list = new List<IProcessIncomingTweet>();
-            // await foreach (var item in svc.ReadAsync(cancel.Token))
-            // {
-            //     list.Add(item);
-            //     if( list.Count > 4 ) cancel.Cancel();
-            // }
-            // Assert.Equal(5, list.Count);
+        // _output.WriteLine("Starting test");
+        // var svc = new TwitterFeedProvider();
+        // var cancel = new CancellationTokenSource(TimeSpan.FromSeconds(3));
+        // var list = new List<IProcessIncomingTweet>();
+        // await foreach (var item in svc.ReadAsync(cancel.Token))
+        // {
+        //     list.Add(item);
+        //     if( list.Count > 4 ) cancel.Cancel();
+        // }
+        // Assert.Equal(5, list.Count);
         //}
 
         [Fact]
@@ -81,7 +70,7 @@ namespace TweetSpot.Components
             //Assert.Equal("Hello", secretValue);
         }
 
-    
+
     }
 
     public class Temp
