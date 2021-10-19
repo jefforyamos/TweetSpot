@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>TweetSpot</RootNamespace>
     <UserSecretsId>dotnet-TweetSpot.Processing-D19CB1A6-9499-4795-BF3E-C37AE398FA70</UserSecretsId>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>

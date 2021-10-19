@@ -4,6 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>TweetSpot</RootNamespace>
     <UserSecretsId>1ce3170a-e9a0-4c50-a651-c1739a7c9006</UserSecretsId>
+    <Nullable>enable</Nullable>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
 
   <ItemGroup>

@@ -32,6 +32,7 @@ namespace TweetSpot.Components
         private class FakeTweet : ServiceBus.Commands.IProcessIncomingTweet
         {
             public int id { get; set; }
+
         }
         
     }

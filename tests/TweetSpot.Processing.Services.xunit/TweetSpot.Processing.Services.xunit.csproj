@@ -5,6 +5,7 @@
         <RootNamespace>TweetSpot</RootNamespace>
 
     <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
