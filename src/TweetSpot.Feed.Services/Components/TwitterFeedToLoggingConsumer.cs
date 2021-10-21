@@ -16,7 +16,7 @@ namespace TweetSpot.Components
         {
             await foreach (var item in provider.ReadAsync(cancelToken))
             {
-                _logger.LogInformation($"Tweet #{item.id}");
+                // _logger.LogInformation(item.ToString());
             }
         }
     }
