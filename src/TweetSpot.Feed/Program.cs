@@ -2,7 +2,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TweetSpot.BackgroundServices;
-using TweetSpot.Components;
 using TweetSpot.Models;
 
 namespace TweetSpot.Feed
@@ -20,7 +19,7 @@ namespace TweetSpot.Feed
                 {
                     if (context.HostingEnvironment.IsDevelopment())
                     {
-                        builder.AddUserSecrets<TwitterFeedProvider>();
+                        builder.AddUserSecrets<FeedBackgroundService>();
                     }
                     else
                     {
@@ -30,7 +29,6 @@ namespace TweetSpot.Feed
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddSingleton<ITwitterFeedConfiguration, TwitterFeedConfiguration>();
-                    services.AddTransient<ITwitterFeedProvider, TwitterFeedProvider>();
                     services.AddHostedService<FeedBackgroundService>();
                 });
     }

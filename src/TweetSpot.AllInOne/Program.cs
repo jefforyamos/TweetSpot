@@ -9,7 +9,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TweetSpot.AllInOne.ServiceBus.Consumers;
 using TweetSpot.BackgroundServices;
-using TweetSpot.Components;
 using TweetSpot.Models;
 
 namespace TweetSpot.AllInOne
@@ -27,7 +26,7 @@ namespace TweetSpot.AllInOne
                 {
                     if (context.HostingEnvironment.IsDevelopment())
                     {
-                        builder.AddUserSecrets<TwitterFeedProvider>();
+                        builder.AddUserSecrets<FeedBackgroundService>();
                     }
                     else
                     {
@@ -50,7 +49,6 @@ namespace TweetSpot.AllInOne
 
                    // services.AddHostedService<SampleBackgroundWorker>();
                     services.AddSingleton<ITwitterFeedConfiguration, TwitterFeedConfiguration>();
-                    services.AddTransient<ITwitterFeedProvider, TwitterFeedProvider>();
                     services.AddHostedService<FeedBackgroundService>();
 
                 });
