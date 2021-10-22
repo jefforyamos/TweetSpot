@@ -11,22 +11,16 @@ namespace TweetSpot.BackgroundServices
     {
         private readonly ILogger<FeedBackgroundService> _logger;
         private readonly ITwitterFeedProvider _provider;
-        private readonly ITwitterFeedConsumer _consumer;
 
-        public FeedBackgroundService(ILogger<FeedBackgroundService> logger, ITwitterFeedProvider provider, ITwitterFeedConsumer consumer)
+        public FeedBackgroundService(ILogger<FeedBackgroundService> logger, ITwitterFeedProvider provider)
         {
             _logger = logger;
             _provider = provider;
-            _consumer = consumer;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
-            {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await _consumer.ConsumeAsync(_provider, stoppingToken);
-            }
+            await _provider.ReadFromTwitterAsync(stoppingToken);
         }
     }
 }

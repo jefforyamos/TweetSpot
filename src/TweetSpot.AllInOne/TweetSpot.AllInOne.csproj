@@ -1,10 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>TweetSpot</RootNamespace>
-    <UserSecretsId>1ce3170a-e9a0-4c50-a651-c1739a7c9006</UserSecretsId>
+    <UserSecretsId>dotnet-TweetSpot.AllInOne-EF9CFFEB-3C12-44F9-9319-4A0328DCCC68</UserSecretsId>
     <Nullable>enable</Nullable>
+    <AnalysisLevel>latest</AnalysisLevel>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
 
@@ -14,7 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TweetSpot.Feed.Services\TweetSpot.Feed.Services.csproj" />
     <ProjectReference Include="..\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
+    <ProjectReference Include="..\TweetSpot.Processing.Services\TweetSpot.Processing.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ServiceBus\Consumers\" />
+  </ItemGroup>
 </Project>

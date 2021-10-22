@@ -26,5 +26,6 @@ namespace TweetSpot.Models
         }
 
         public Uri SampledStreamUri { get; }
+        public int SpeedReportIntervalCount => 100; // Todo: Get config from environment?
     }
 }

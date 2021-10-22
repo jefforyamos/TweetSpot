@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Primatives.xunit"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Processing.Services.xunit", "..\tests\TweetSpot.Processing.Services.xunit\TweetSpot.Processing.Services.xunit.csproj", "{9EFDF91A-3596-40E0-8967-CBF04DC6BB8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.AllInOne", "..\src\TweetSpot.AllInOne\TweetSpot.AllInOne.csproj", "{0C13A3C8-72CB-4C6A-8546-A73CA9673847}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,5 +130,17 @@ Global
 		{9EFDF91A-3596-40E0-8967-CBF04DC6BB8C}.Release|x64.Build.0 = Release|Any CPU
 		{9EFDF91A-3596-40E0-8967-CBF04DC6BB8C}.Release|x86.ActiveCfg = Release|Any CPU
 		{9EFDF91A-3596-40E0-8967-CBF04DC6BB8C}.Release|x86.Build.0 = Release|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Debug|x64.Build.0 = Debug|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Debug|x86.Build.0 = Debug|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|x64.ActiveCfg = Release|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|x64.Build.0 = Release|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

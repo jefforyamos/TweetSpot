@@ -7,5 +7,10 @@ namespace TweetSpot.Models
         string TwitterBearerToken { get; }
 
         Uri SampledStreamUri { get; }
+
+        /// <summary>
+        /// Send a speed report every Xxx number of incoming records
+        /// </summary>
+        int SpeedReportIntervalCount { get; }
     }
 }
