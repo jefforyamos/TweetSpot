@@ -17,8 +17,7 @@ namespace TweetSpot.ServiceBus.Events
         {
             TimeSpanForAllCycles = elapsedTime;
             TweetsReceivedForAllCycles = totalCount;
-            var elapsedSeconds = TimeSpanForAllCycles.TotalSeconds;
-            AverageSpeedTweetsPerSecond = (double)TimeSpanForAllCycles.TotalSeconds / elapsedSeconds;
+            AverageSpeedTweetsPerSecond = Convert.ToDouble(TweetsReceivedForAllCycles) / TimeSpanForAllCycles.TotalSeconds;
             if (previousReport == null)
             {
                 TweetsReceivedThisCycle = TweetsReceivedForAllCycles;
@@ -29,7 +28,7 @@ namespace TweetSpot.ServiceBus.Events
             {
                 TweetsReceivedThisCycle = totalCount - previousReport.TweetsReceivedForAllCycles;
                 TimeSpanThisCycle = TimeSpanForAllCycles.Subtract(previousReport.TimeSpanForAllCycles);
-                CurrentSpeedTweetsPerSecond = (double)TweetsReceivedThisCycle / TimeSpanThisCycle.TotalSeconds;
+                CurrentSpeedTweetsPerSecond = Convert.ToDouble(TweetsReceivedThisCycle) / TimeSpanThisCycle.TotalSeconds;
             }
         }
         public ulong TweetsReceivedThisCycle { get; }
