@@ -62,7 +62,7 @@ namespace TweetSpot.BackgroundServices
                 var tweet = ProcessIncomingTweet.Create(line, GetUtcNow(), ordinalCount++);
                 if (tweet != null)
                 {
-                    // await _bus.Publish<IProcessIncomingTweet>(tweet, cancelToken); // Why not SEND???
+                    await _bus.Send<IProcessIncomingTweet>(tweet, cancelToken); 
                 }
 
                 if (ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0)

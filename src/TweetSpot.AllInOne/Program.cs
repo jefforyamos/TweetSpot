@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using TweetSpot.AllInOne.ServiceBus.Consumers;
 using TweetSpot.BackgroundServices;
 using TweetSpot.Models;
+using TweetSpot.ServiceBus.Consumers;
 
 namespace TweetSpot.AllInOne
 {
