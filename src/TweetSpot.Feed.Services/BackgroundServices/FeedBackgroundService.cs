@@ -48,7 +48,7 @@ namespace TweetSpot.BackgroundServices
         {
             await _bus.Publish<ITwitterFeedInitStarted>(new { BearerTokenAbbreviation = CreateBearerTokenAbbreviation() }, cancelToken);
             ulong ordinalCount = 0;
-            using var client = new HttpClient {Timeout = _configuration.ClientTimeout};
+            using var client = new HttpClient { Timeout = _configuration.ClientTimeout };
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _configuration.TwitterBearerToken);
             using var streamTask = client.GetStreamAsync(_configuration.SampledStreamUri, cancelToken);
             using var streamReader = new System.IO.StreamReader(await streamTask);
@@ -62,7 +62,7 @@ namespace TweetSpot.BackgroundServices
                 var tweet = ProcessIncomingTweet.Create(line, GetUtcNow(), ordinalCount++);
                 if (tweet != null)
                 {
-                    await _bus.Send<IProcessIncomingTweet>(tweet, cancelToken); // Triggers persistence
+                    // await _bus.Publish<IProcessIncomingTweet>(tweet, cancelToken); // Why not SEND???
                 }
 
                 if (ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0)

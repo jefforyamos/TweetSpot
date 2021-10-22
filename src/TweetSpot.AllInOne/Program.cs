@@ -39,7 +39,7 @@ namespace TweetSpot.AllInOne
                     {
                         x.AddConsumer<SampleMessageConsumer>();
                         x.AddConsumer<LogEventsToConsoleConsumer>(); // To show us what's going on
-
+                        x.AddConsumer<ProcessIncomingTweetConsumer>();
                         x.UsingInMemory((context, cfg) =>
                         {
                             cfg.ConfigureEndpoints(context);
@@ -47,12 +47,12 @@ namespace TweetSpot.AllInOne
                     });
                     services.AddMassTransitHostedService(true);
 
-                   // services.AddHostedService<SampleBackgroundWorker>();
+                    // services.AddHostedService<SampleBackgroundWorker>();
                     services.AddSingleton<ITwitterFeedConfiguration, TwitterFeedConfiguration>();
                     services.AddHostedService<FeedBackgroundService>();
 
                 });
     }
 
-   
+
 }
