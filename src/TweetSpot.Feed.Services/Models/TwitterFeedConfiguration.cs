@@ -7,13 +7,17 @@ namespace TweetSpot.Models
     public class TwitterFeedConfiguration : ITwitterFeedConfiguration
     {
         private readonly IConfiguration _configuration;
+
+        // Keys that correlate to environment values
         internal const string TwitterBearerTokenKey = "TwitterBearerToken";
         internal const string TwitterClientTimeoutKey = "TwitterClientTimeout";
 
+        // Defaults
         internal const string SampledStreamUriDefault = "https://api.twitter.com/2/tweets/sample/stream";
         internal static readonly TimeSpan ClientTimeoutDefault = TimeSpan.FromSeconds(20);
 
-        internal static TimeSpan ClientTimeoutMaximumAllowed = TimeSpan.FromMinutes(5);
+        // Max values
+        internal static readonly TimeSpan ClientTimeoutMaximumAllowed = TimeSpan.FromMinutes(5);
 
         public TwitterFeedConfiguration(IConfiguration configuration)
         {

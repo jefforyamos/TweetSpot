@@ -49,6 +49,11 @@ namespace TweetSpot.BackgroundServices
         /// <returns>Creates a task that repeatedly attempts to gain connection and pull the feed</returns>
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            await SafeExecuteAsync(stoppingToken);
+        }
+
+        internal virtual async Task SafeExecuteAsync(CancellationToken stoppingToken)
+        {
             while (!stoppingToken.IsCancellationRequested)
             {
                 try
@@ -62,12 +67,13 @@ namespace TweetSpot.BackgroundServices
             }
         }
 
+
         /// <summary>
         /// Performs a single cycle read.  Resets the HTTP connection and everything.
         /// </summary>
         /// <param name="cancelToken">Tells us when to stop.</param>
         /// <returns>Returns a task that pulls tweets and publishes them to the bus.</returns>
-        internal async Task InternalReadFromTwitterAsync(CancellationToken cancelToken)
+        internal virtual async Task InternalReadFromTwitterAsync(CancellationToken cancelToken)
         {
             await _bus.Publish<ITwitterFeedInitStarted>(new { BearerTokenAbbreviation = _configuration.TwitterBearerTokenAbbreviation }, cancelToken);
             using var client = _serviceProvider.GetService<IHttpClient>() ?? throw new InvalidOperationException($"Bad dependency injection for {nameof(IHttpClient)}");
@@ -89,7 +95,7 @@ namespace TweetSpot.BackgroundServices
                     _ordinalCount++;
                 }
 
-                if (_ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0)
+                if ((_configuration.SpeedReportIntervalCount > 0) && ( _ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0))
                 {
                     var currentReport = new FeedSpeedReported(_stopWatch.Elapsed, _ordinalCount, _previousReport);
                     await _bus.Publish<IFeedSpeedReported>(currentReport, cancelToken);

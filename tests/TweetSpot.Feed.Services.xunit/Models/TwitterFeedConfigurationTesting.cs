@@ -1,14 +1,22 @@
-﻿using System;
+﻿using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.Configuration;
-using Xunit;
 using Moq;
-using TweetSpot.Models;
+using Xunit;
+using Xunit.Abstractions;
 
 
-namespace TweetSpot.Feed.Services.xunit.Models
+namespace TweetSpot.Models
 {
     public class TwitterFeedConfigurationTesting
     {
+        private readonly ITestOutputHelper _output;
+
+        public TwitterFeedConfigurationTesting(ITestOutputHelper output)
+        {
+            _output = output;
+        }
+
+
         [Theory(DisplayName = "The abbreviation for the bearer token should include digits from begin and end with elipisis in between")]
         [InlineData("01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ", "012...XYZ")]
         [InlineData("01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ987654321", "012...321")]
@@ -47,6 +55,7 @@ namespace TweetSpot.Feed.Services.xunit.Models
             var envConfig = new Mock<IConfiguration>();
             envConfig.Setup(e => e[TwitterFeedConfiguration.TwitterClientTimeoutKey]).Returns(envSpecifiedValue);
             var config = new TwitterFeedConfiguration(envConfig.Object);
+            _output.WriteLine($"Specifying [{envSpecifiedValue}] in the environment is interpreted as {config.ClientTimeout}, or {config.ClientTimeout.TotalSeconds} seconds.");
             Assert.Equal(totalTimeInSeconds, config.ClientTimeout.TotalSeconds);
         }
     }
