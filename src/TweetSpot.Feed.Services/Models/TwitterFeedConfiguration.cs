@@ -1,13 +1,19 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
+using TweetSpot.Exceptions;
 
 namespace TweetSpot.Models
 {
     public class TwitterFeedConfiguration : ITwitterFeedConfiguration
     {
         private readonly IConfiguration _configuration;
-        private const string TwitterBearerTokenKey = "TwitterBearerToken";
-        private const string SampledStreamUriDefault = "https://api.twitter.com/2/tweets/sample/stream";
+        internal const string TwitterBearerTokenKey = "TwitterBearerToken";
+        internal const string TwitterClientTimeoutKey = "TwitterClientTimeout";
+
+        internal const string SampledStreamUriDefault = "https://api.twitter.com/2/tweets/sample/stream";
+        internal static readonly TimeSpan ClientTimeoutDefault = TimeSpan.FromSeconds(20);
+
+        internal static TimeSpan ClientTimeoutMaximumAllowed = TimeSpan.FromMinutes(5);
 
         public TwitterFeedConfiguration(IConfiguration configuration)
         {
@@ -20,13 +26,31 @@ namespace TweetSpot.Models
             get
             {
                 var token = _configuration[TwitterBearerTokenKey];
-                if (token == null) throw new InvalidOperationException($"Invalid configuration.  {TwitterBearerTokenKey} user secret is not set.");
                 return token;
             }
         }
 
         public Uri SampledStreamUri { get; }
         public int SpeedReportIntervalCount => 100; // Todo: Get config from environment?
-        public TimeSpan ClientTimeout => TimeSpan.FromSeconds(20);
+        public TimeSpan ClientTimeout
+        {
+            get
+            {
+                var configValue = _configuration[TwitterClientTimeoutKey];
+                if (configValue != null && TimeSpan.TryParse(configValue, out var parsedValue))
+                {
+                    if (parsedValue <= ClientTimeoutMaximumAllowed) return parsedValue;
+                    return int.TryParse(configValue, out var intResult) ? TimeSpan.FromSeconds(intResult) : ClientTimeoutDefault;
+                }
+                return ClientTimeoutDefault;
+            }
+        }
+
+        public int? StreamBufferSize => 10 * 1_024;
+        public void DemandEssentialSettings()
+        {
+            if( string.IsNullOrWhiteSpace(_configuration[TwitterBearerTokenKey]))
+                throw new EnvironmentConfigurationException(TwitterBearerTokenKey,"Twitter feed cannot be started without a bearer token provided by Twitter.");
+        }
     }
 }

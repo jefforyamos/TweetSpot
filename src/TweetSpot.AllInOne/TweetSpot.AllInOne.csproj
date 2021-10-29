@@ -18,8 +18,4 @@
     <ProjectReference Include="..\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
     <ProjectReference Include="..\TweetSpot.Processing.Services\TweetSpot.Processing.Services.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ServiceBus\Consumers\" />
-  </ItemGroup>
 </Project>

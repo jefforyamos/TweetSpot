@@ -4,7 +4,7 @@ using MassTransit;
 using Microsoft.Extensions.Logging;
 using TweetSpot.ServiceBus.Events;
 
-namespace TweetSpot.AllInOne.ServiceBus.Consumers
+namespace TweetSpot.ServiceBus.Consumers
 {
     public class LogEventsToConsoleConsumer : IConsumer<ITwitterFeedInitStarted>, IConsumer<IFeedSpeedReported>
     {

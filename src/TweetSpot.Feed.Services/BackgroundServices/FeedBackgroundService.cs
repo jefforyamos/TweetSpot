@@ -2,13 +2,16 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Diagnostics;
+using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 using MassTransit;
+using Microsoft.Extensions.DependencyInjection;
 using TweetSpot.Delegates;
 using TweetSpot.Models;
+using TweetSpot.Net;
 using TweetSpot.ServiceBus.Commands;
 using TweetSpot.ServiceBus.Events;
 
@@ -19,16 +22,31 @@ namespace TweetSpot.BackgroundServices
         private readonly ILogger<FeedBackgroundService> _logger;
         private readonly ITwitterFeedConfiguration _configuration;
         private readonly IBus _bus;
+        private readonly IServiceProvider _serviceProvider;
+        private readonly Stopwatch _stopWatch = new Stopwatch();
+        private ulong _ordinalCount;
+        private FeedSpeedReported? _previousReport;
 
         internal UtcNowFunc GetUtcNow = () => DateTime.UtcNow; // Allows for override during unit testing
 
-        public FeedBackgroundService(ILogger<FeedBackgroundService> logger, ITwitterFeedConfiguration configuration, IBus bus)
+        /// <summary>
+        /// Value to use for buffering size if the value is unspecified in the configuration.
+        /// </summary>
+        private const int DefaultBufferingSize = 1_024;
+
+        public FeedBackgroundService(ILogger<FeedBackgroundService> logger, ITwitterFeedConfiguration configuration, IBus bus, IServiceProvider serviceProvider)
         {
-            _logger = logger;
-            _configuration = configuration;
-            _bus = bus;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
+            _bus = bus ?? throw new NullReferenceException(nameof(bus));
+            _serviceProvider = serviceProvider ?? throw new NullReferenceException(nameof(serviceProvider));
         }
 
+        /// <summary>
+        /// Overridden to retry repeatedly until the service is stopped.
+        /// </summary>
+        /// <param name="stoppingToken">The token that tells us when to stop.</param>
+        /// <returns>Creates a task that repeatedly attempts to gain connection and pull the feed</returns>
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
@@ -44,46 +62,46 @@ namespace TweetSpot.BackgroundServices
             }
         }
 
+        /// <summary>
+        /// Performs a single cycle read.  Resets the HTTP connection and everything.
+        /// </summary>
+        /// <param name="cancelToken">Tells us when to stop.</param>
+        /// <returns>Returns a task that pulls tweets and publishes them to the bus.</returns>
         internal async Task InternalReadFromTwitterAsync(CancellationToken cancelToken)
         {
-            await _bus.Publish<ITwitterFeedInitStarted>(new { BearerTokenAbbreviation = CreateBearerTokenAbbreviation() }, cancelToken);
-            ulong ordinalCount = 0;
-            using var client = new HttpClient { Timeout = _configuration.ClientTimeout };
+            await _bus.Publish<ITwitterFeedInitStarted>(new { BearerTokenAbbreviation = _configuration.TwitterBearerTokenAbbreviation }, cancelToken);
+            using var client = _serviceProvider.GetService<IHttpClient>() ?? throw new InvalidOperationException($"Bad dependency injection for {nameof(IHttpClient)}");
+            client.Timeout = _configuration.ClientTimeout;
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _configuration.TwitterBearerToken);
             using var streamTask = client.GetStreamAsync(_configuration.SampledStreamUri, cancelToken);
-            using var streamReader = new System.IO.StreamReader(await streamTask);
+            await using var bufferedStream = new BufferedStream(await streamTask, _configuration.StreamBufferSize.GetValueOrDefault(DefaultBufferingSize));
+            using var streamReader = new StreamReader(bufferedStream);
             var stopWatch = new Stopwatch();
             stopWatch.Start();
-            FeedSpeedReported? previousReport = null;
             while (!streamReader.EndOfStream)
             {
                 var line = await streamReader.ReadLineAsync();
                 if (line == null) break;
-                var tweet = ProcessIncomingTweet.Create(line, GetUtcNow(), ordinalCount++);
+                var tweet = ProcessIncomingTweet.Create(line, GetUtcNow(), _ordinalCount);
                 if (tweet != null)
                 {
                     await _bus.Publish<IProcessIncomingTweet>(tweet, cancelToken);
+                    _ordinalCount++;
                 }
 
-                if (ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0)
+                if (_ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0)
                 {
-                    // _logger.LogInformation($"{ordinalCount:N0} tweets received in {elapsedSeconds:N1} seconds = {countPerSecond:N1}/sec.  Current speed = {currentSpeed:N1}/sec.");
-                    var currentReport = new FeedSpeedReported(stopWatch.Elapsed, ordinalCount, previousReport);
+                    var currentReport = new FeedSpeedReported(_stopWatch.Elapsed, _ordinalCount, _previousReport);
                     await _bus.Publish<IFeedSpeedReported>(currentReport, cancelToken);
-                    previousReport = currentReport; // Save for next cycle
+                    _previousReport = currentReport; // Save for next cycle
                 }
             }
         }
 
-        internal string CreateBearerTokenAbbreviation()
+        public override Task StartAsync(CancellationToken cancellationToken)
         {
-            const int MinimumLength = 10;
-            var token = _configuration.TwitterBearerToken;
-            var length = token?.Length ?? 0;
-            if (length < MinimumLength) return "<BAD TOKEN>";
-            var beginSegment = token?.Substring(0, 3) ?? string.Empty;
-            var endSegment = token?.Substring(length - 3, 3) ?? string.Empty;
-            return $"{beginSegment}...{endSegment}";
+            _configuration.DemandEssentialSettings();
+            return base.StartAsync(cancellationToken);
         }
     }
 }
