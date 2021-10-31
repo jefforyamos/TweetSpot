@@ -82,8 +82,7 @@ namespace TweetSpot.BackgroundServices
             using var streamTask = client.GetStreamAsync(_configuration.SampledStreamUri, cancelToken);
             await using var bufferedStream = new BufferedStream(await streamTask, _configuration.StreamBufferSize.GetValueOrDefault(DefaultBufferingSize));
             using var streamReader = new StreamReader(bufferedStream);
-            var stopWatch = new Stopwatch();
-            stopWatch.Start();
+            _stopWatch.Start();
             while (!streamReader.EndOfStream)
             {
                 var line = await streamReader.ReadLineAsync();
@@ -95,7 +94,7 @@ namespace TweetSpot.BackgroundServices
                     _ordinalCount++;
                 }
 
-                if ((_configuration.SpeedReportIntervalCount > 0) && ( _ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0))
+                if ((_configuration.SpeedReportIntervalCount > 0) && (_ordinalCount % (ulong)_configuration.SpeedReportIntervalCount == 0))
                 {
                     var currentReport = new FeedSpeedReported(_stopWatch.Elapsed, _ordinalCount, _previousReport);
                     await _bus.Publish<IFeedSpeedReported>(currentReport, cancelToken);

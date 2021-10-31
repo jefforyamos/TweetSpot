@@ -17,7 +17,7 @@ namespace TweetSpot.ServiceBus.Consumers
         }
         public Task Consume(ConsumeContext<IProcessIncomingTweet> context)
         {
-            // _logger .LogInformation($"Tweet {context.Message.Id}");
+            // _logger.LogInformation($"Tweet {context.Message.UnparsedData}");
             return Task.CompletedTask;
         }
     }

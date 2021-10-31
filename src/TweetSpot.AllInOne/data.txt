@@ -1,0 +1,716 @@
+Building...
+[40m[32minfo[39m[22m[49m: MassTransit[0]
+      Configured endpoint LogEventsToConsole, Consumer: TweetSpot.ServiceBus.Consumers.LogEventsToConsoleConsumer
+[40m[32minfo[39m[22m[49m: MassTransit[0]
+      Configured endpoint ProcessIncomingTweet, Consumer: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer
+[40m[32minfo[39m[22m[49m: MassTransit[0]
+      Bus started: loopback://localhost/
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/jeff/dotnet5/TweetSpot/src/TweetSpot.AllInOne
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.LogEventsToConsoleConsumer[0]
+      TWITTER Feed provider is opening access to feed using token AAA...7QK.
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967553241088","text":"@GretaThunberg Welcome to Glasgow https://t.co/19QWwf6UE9"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967569969157","text":"อยากให้โซชิมางานด้วยจัง อยากเห็นความปังของแม่ๆ #SMHalloweenHouse"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967553294336","text":"The voids in her soutuvw https://t.co/Baf4YiT7y4"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967553114115","text":"@BiggBoss @realumarriaz \n\nSupporting umar the individual player\n\n#UmarRiaz #BBKingUmar\n\n78"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967557312521","text":"RT @jjcuts: jaemin jeno winter x squid game ㅋㅋㅋㅋ 너무 귀여워 https://t.co/s7VRyZ660c"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727963346305026","text":"一緒に車に乗っている時に、私1人がヘイヘイと拳を振り上げていたので、彼の目には狂気に映った事でしょう。\n否、対向車線からも前後からも狂気に見えた事でしょう。"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967578357762","text":"@Anjana_____ @InduInduu කාලද ඉන්නෙ බොසා?"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727963346309126","text":"RT @rynewm: GIVEAWAY 100.000 IDR | $7 | GCASH\n\n~ retweet this\n~ retweet &amp; like tweet bellow 👇\n\nend 90 minutes"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967565705222","text":"RT @ENHYPEN: '초자연 현상 전문! 각종 미스테리, 심령 현상 일체'\n핼러윈 맞아 영업 개시합니다 😎\n\n(https://t.co/3YT9OO4eyy)\n\n#ENHYPEN #UpperSideDreamin\n#Halloween_Edition\n#엔하…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967557373954","text":"RT @Genshin_7: ＼5日目／\n#原神 Ver.2.2アップデート記念！ Twitterキャンペーン 第3弾\n\n原神グッズやAmazonギフト券10000円分が当たるチャンス！\n\n▼参加方法\n①@Genshin_7をフォロー\n②本ツイートをRT\n③その場で結果が届く…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967548985348","text":"RT @iu_bcu: เป็นแวมไพร์มามี่โพ๊ะโกะ https://t.co/RUPW0UtyXd"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967574093830","text":"私だけ場違い https://t.co/Dypgz1tAno"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967540596738","text":"RT @RookieThailand: 📢 [2/4] ตารางงานน้อง ๆ นักแสดงรุกกี้ไทยแลนด์ ประจำวันที่ 1-15 พฤศจิกายน มาแล้วจ้า ✨\n\nห้ามพลาด! เฝ้าหน้าจอรอชมกันได้เลย…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967561555968","text":"@CryptoGeum Mickey mouse clubhouse anuh nahh @picknava"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967561502720","text":"RT @NinangAnne: $15 || ₱690 || 210rb \n\n— Follow @SolanaSkeletons + Rt &amp; Like his pin 📌 \n— Rt &amp; Reply done \n\nEnds In 8 Hours"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967544729604","text":"@AndyCoins @MegapontNFT @Stacks @decryptmedia @BitcoinMagazine @Cointelegraph @nftnow Get em' while you can. All I can say."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967540604936","text":"投票完了。引越してきてから初めての選挙、会場は小学校で狭い教室、夕方5時だけどパラパラパラパラと人が来てた。"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967549046785","text":"RT @salfordsu: NUS Delegate Elections open on 1st November! (Yes that's Monday 🎉)\n\nWe are looking for 6 students who are passionate about s…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727963363008513","text":"トリックオアトリート🍭🍬\n\n今日は\n「SHINJYUKUアルティメットハロウィン2021」\n新宿scienceで20:15〜、トリライブです、待ってるネ！\nそして前物販19:00〜20:00なのでお間違えなく🎃❤️‍🔥\n\n写真はいつか着た南瓜、\n今日は違うのを着るヨ〜 https://t.co/2iuemEN6l6"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967553175553","text":"@maitake_ki ありがとうございます🙏\n羽沢珈琲店に週14で通いたくなる笑顔ですね！！紗夜さんのシーンも尊き…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967557369856","text":"@sayana_iki @tsaagii5 Өндөр нь 176 см байх"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967578497025","text":"@billharawa @Jesus_porvida 😅👏🏾👏🏾👏🏾 my thoughts exactly!"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967548968962","text":"@ToEuj9_FD3S 美味しそうです(*´∀｀*)\n海ほたるφ(..)メモメモ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967574302720","text":"@alkhazan5 بس نامي حاليا تقدر تتحكم بزيوس بشكل كامل عكس تشوبر الي مايقدرش يقاتل برامبل الوحش اكثر من نص ساعه باثر جانبي كمان دا غير ان كوين كان بيلعب مع تشوبر مش بيقاتل بشكل جدي"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967570108418","text":"@ramski67 Dankeschön 🍁🍁🍂🍃"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967578333185","text":"RT @SMTOWNGLOBAL: BOO!👻 #XIAOJUN has arrived at the SM Halloween House as ‘Venom’!\n\n#샤오쥔  #肖俊 #WayV #威神V \n#SM_Halloween_House #SMTOWN_WONDE…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967548968967","text":"RT @bemymarch: เลิกเถียงกันนะ สวยสุดในตึก https://t.co/PCEsVE1uDi"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967557443586","text":"@GoddessDora7 At the sight of the rosette 😍 and the tail in the cage twitch with joyous anticipation 😍😍😍👍"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967548919811","text":"仕事と原稿のストレスで最近胃が荒れに荒れてる"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967549108224","text":"RT @sinyor198: https://t.co/GQfXXfOIbh"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967557312514","text":"RT @realdryice: ปปแต่งเป็นลูกชิ้นยืนกิน"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967561576450","text":"@EclecticMethod I want to see that.\n\nBetting would be insane if possible. Idk, I’m already mentally stacking odds. Mind-blowing matchup. Who does the winner fight?\n\nI kind of want R2 to win… what does that mean…\n\nYour art is working already fren 🤯"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967540609027","text":"@Raikunno_sub あ、り、が、と！！！！！！！\n僕って可愛いかもしれない(自画自賛)"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967544946693","text":"What a great butt to drool over, but hey #censoredforbetas right? https://t.co/JErWa18dMX"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727963363221506","text":"It’s been said before but… watch out @antanddec…! There’s a new TV duo in town. \nHughie &amp; Freddie worked the red carpet and even interviewed Sharon Stone 😱\nMore from their night at the Pride of Britain Awards @BBCBreakfast tomorrow! 📺 https://t.co/ddaNIcZOhf"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967561502724","text":"@suiminn_at25 おめでとう🎊🎊"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967569973253","text":"16話見てきたんだけど怖い。17話怖い。怖い。"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967569940485","text":"RT @selenophiledrm: เอาสิ https://t.co/xgFleB64iO"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727959172898818","text":"RT @SMTOWNGLOBAL: BOO!👻 #YUTA has arrived at the SM Halloween House as ‘Kenshin Himura’! \n\n#유타 #NCT #NCT127 \n#SM_Halloween_House #SMTOWN_WO…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967570071555","text":"RT @hourIyng: https://t.co/Bsw28PY8qX"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967574138885","text":"@an_kayama07 HappyHalloween🎃"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967574138886","text":"RT @Abib_Official: [AbibXENHYPEN]\nHow can't we love Our global Model!\n\nWe hope you enjoy watching our video\nand share your thought with you…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967557357574","text":"シャノワールを朝に出てからのご帰宅ですwww🤭\n\nにしても、こうして並べると圧倒的重厚感www https://t.co/PRW2vfStI1"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967561506827","text":"RT @neerajbaudh47: आज भुसावळ में महामंत्री मा. श्री कॉ. वेणू पी नायर साहब जी आये थे! महाराष्ट्र रेलवे अप्रेंटिस टिम भरत भाई परदेशी मित्र प…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967574265869","text":"RT @MrAndyNgo: Portland trans #antifa member Andrea Lane Mun, formerly known as Jacob Andrew Camello, promises mass political violence if K…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967553179649","text":"RT @_hepe6: เราเคยอ่านจำไม่ได้ว่าจากเล่มไหน เค้าเล่าว่าแม่กำลังด่าลูกเสียงดังด้วยความโมโหอยู่แล้วมีโทรศัพท์เข้า แม่สามารถเปลี่ยนเสียงมาพูด…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727954978656259","text":"himadayo_poke\nフォローされた数:-2(前日比:-1)\nhttps://t.co/08jHpXrZu5"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971764269065","text":"笑顔よ。第一印象を大事にしなきゃ。（魔女の宅急便）"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971734913024","text":"RT @jjlinisgod: อันนี้ตลกมาก5555555 บรรทัดบนเขียนว่า “ถึงทุกท่านที่พาสุนัขมาเดินเล่น กรุณาเก็บอึสุนัขไปด้วย” ส่วนบรรทัดล่างคือ “ถึงหมาทุกตั…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971768389632","text":"blue! T19. Chub di bawah 19 ada? Temenan kuy kali aja cocok wkwkwk"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971747418117","text":"ここまで無料だったんだよな…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971768451073","text":"@jae127tae なんかさ、でもさ、ナナちゃん着てたやつと同じのゾゾになくない？？？？\nなんか文字の色がちがーーう‼️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971772633091","text":"RT @pengarang_sajak: Ehhh iya..\n\nKalo Garuda sampe bangkrut, itu bukan salahnya Jokowi..\n\nJokowi udah nolong dgn biarin mereka atur harga t…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760078850","text":"RT @mierukochan_PR: TVアニメ『#見える子ちゃん』\n⛩️⛩️毎週企画！⛩️⛩️\nサイン入り台本プレゼントキャンペーン！\n\n第5話は…\n二暮堂ユリア役：#佐倉綾音 さんのサイン入り！\n抽選で1名様にプレゼントです👻🍄\n\n▼応募方法\n①@mierukochan_…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971751661573","text":"RT @omatsurijapan: 路上飲みする人たちと路上飲みをやめさせたい都の職員\n\n#地味ハロウィン\n#地味ハロウィン2021\n#DPZ https://t.co/44EByP9sNP"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760181259","text":"RT @jwIuvs: do people know how insane they sound when they say he can’t apologise because he’s under contract? like does that sound like a…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971768606722","text":"RT @desdelamoncloa: El Gobierno aprueba un nuevo paquete de medidas para ampliar la protección de los consumidores vulnerables ante la esca…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971755941889","text":"RT @asunel1: Demokrasi su ise testisi laikliktir!..Testi kırıldı mı bu toplumu kimse bir arada tutamaz!..\n\nSaygı ve rahmetle...☘\n\n#Erdalİnö…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971764260869","text":"RT @nctymisfit: and if Taeyong and Jungwoo dressed up as SpongeBob and Patrick 😭😭"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971755806720","text":"@mokako_ya @1 デュオ実績0\n何もできません\n代領主あります"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971768397830","text":"RT @sayam15010398: @Dtopbeautyworld I vote  #MiuraHaruma \nfrom Japan for\n#100MostHandsomeMen2021\n#TBworld2021\n@Dtopbeautyworld\n#三浦春馬    #ha…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971739078659","text":"RT @sarutahikojitin: ピアノ移設のついて\n\n緊急事態宣言により延期となっておりました一宮駅ピアノ移設企画\n\n移設日が決定いたしました。\n\nオープニングセレモニー　\n１１月１日（月）１１時～\n\n記念演奏\n１１時３０分～\n\nその後一般公開となります。\n\n皆様さし…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971764269063","text":"RT @lookkaewlapp: ใครผมลีบแนะนำซื้อกิ๊ฟแบบนี้ คือมันช่วยยกโคนผม ทำให้ผมดูหนาขึ้น เวลาใช้คือเราหนีบแบบในรูปเลยหรือจะใช้ตัวเดียวหนีบตรงกลางผม…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760230400","text":"@Monodi I promise it’s not as hard as you’d think\n\nIf you’re having a hard time, see if you can’t track down more Energy Tanks"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971739029511","text":"RT @GyroCryptoBTC: $40 | Rp 540,000 | ₱ 1,840 | 400 TL\n\n🔸RT this\n🔸Follow me with ‘🔔’ on\n\nEnds in 40 mins"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971768397826","text":"人生は積分。気分は微分。"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971756027908","text":"الله واكبر https://t.co/vCrh6PHjyC"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971751612422","text":"Aciee cieee siapa tuh😆 https://t.co/vrQBqrdb6S"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971751727108","text":"@mashaelr27 جزى الله خير الجزاء كل من ساهم  ولو بالقليل ولو حتى بالنشر وإيصاله لأهل الخير والفضل والإحسان. وصلى الله على نبينا محمد وعلى آله وصحبه ...\n#ساعه_استجابه https://t.co/V0pMTdKfCB https://t.co/zJZjoPXo9D"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971756027907","text":"@nArrowDC @Mohamed56284070 @Parados442 @Bestof_Amine Hiter quoi"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971747500033","text":"RT @cryprules: $100 | ₱4600 | 1.400.000 IDR \n\nrt &amp; follow @unicorncity_NFT rt last tweet\n\nends in 48 hours"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967561580549","text":"@NCTDreamINA RUNNNN JIEEE RUNNNNN"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971751661570","text":"RT @SpotifyJP: Stray Kids (@Stray_Kids_JP) のJAPAN 2nd Single \"#Scars / #ソリクン -Japanese ver.-\" が配信中🎶\n\n\"Scars\" の再生画面では、\n#Spotify でしか見れない\nCanv…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971755872259","text":"RT @SENSE_BOOK: 📣 ชี้แจงเนื้อหาเรื่อง #สวรรค์ประทานพร เล่ม 2\nอ่านเพิ่มเติมได้ที่ 👉🏻 https://t.co/DVmofNsdCG\n\nขอบคุณค่ะ 🙏🏻 https://t.co/D0G0…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971743289346","text":"RT @lilpwnjh: ถอดหน้ากาก vs ใส่หน้ากาก\n\n555555555555555555555555555555 https://t.co/wx8JchUxgB"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760074754","text":"เซต2 25-15 เลยเหรอคะ 👏👏👏"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971751833604","text":"RT @Panda_Shorts: And the second commission done for @WanderingNSFW  ! Of their lovely and plump characters~ https://t.co/sT3DR6DtEw"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971751616516","text":"RT @6ean_o3o: 윈윈 없는 할로윈이 할로윈이냐 걍 할로지 ㅅㅂ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971764244486","text":"RT @chieri_kakyoin: あははは、ふふふ、ふははははは、\nはーっはっはっはっはっ\n\nい、いよいよ今日はハロウィンの日！\n\n18時からはパーティータイムなのだ！\n実況タグは #ブラックちえりからの招待状 \n全力でたのしむのだ！くるのだ！\n\n🎃Halloween P…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971747467265","text":"RT @Ha_RaN9_S2_1920: 체리꾹 좋아하면 앑맘~~\nI vote #Butter for #TheMusicVideo  at #PCAs  @BTS_twt https://t.co/sTM8oTf0l1"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967578415105","text":"@GiovanaSaud معليه تراها ١٥٠ بسيطة"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760066566","text":"RT @co_co_mo_: 🎃👻🍬🖤🍭✨\n#halloween2021 https://t.co/JWR1Pb7KRv"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971755884544","text":"RT @BettyBowers: \"Embrasser est extra.\"\n\n\"Poljubljanje je dodatno.\"\n\n\"Kisu wa yobundesu.\"\n\n\"Поцелуи платные.\"\n\n\"Kissing is extra.\""}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971764195330","text":"RT @9510137S: https://t.co/61ubojlD9P\n\n#BTS  #JIMIN #지민 @BTS_twt https://t.co/Vck6LTUtmL"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971743277058","text":"RT @M2MPD: 필름카메라로 기록한 10월의 추억📸 11월에도 쭈욱 엠투와 함께해요❣ #10월의엠투 #M2film #ArtistOfTheMonth #현진 #HYUNJIN #StrayKids #스트레이키즈 @Stray_Kids https://t.c…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971768438784","text":"Happy Halloween🎃👻🍬\n #jeonjungkook #bts https://t.co/0eEqksaaqp"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971747483655","text":"@jakelowv @jakeylifez"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971764269064","text":"RT @mamajaemin: คนร้ายขโมยโทรศัพท์ค่ะ https://t.co/imy9yqupyZ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971751690240","text":"RT @touno000: ラスストwebオンリー開催おめでとうございます！\n#ルリ島へようこそ展覧会 #ls_wtri https://t.co/bDwj4ejnEv"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971768397824","text":"RT @SMTOWNGLOBAL: 🎃 The SM Halloween House welcomes #KUN as ‘Kaonashi’👻\n\n#쿤  #钱锟 #WayV #威神V \n#SM_Halloween_House #SMTOWN_WONDERLAND_2021\n#S…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760181248","text":"Quand ca mft ma femme aurais ton age https://t.co/IWeWgMGxyb"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760074755","text":"RT @pailewws: กูมองสองรูปนี้สลับกันไปมา ในหัวกูมีแต่คำถามว่างานเดียวกันป้ะวะ https://t.co/hXYBM2OAfi"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971743358979","text":"RT @ivpamax: Очень испуганная, видимо, доставалось ей от людей, а может и сейчас гоняют \"добрые люди\", когда хозяева дома уезжают в Москву.…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971743227906","text":"RT @JohnnysCompany: https://t.co/t4A7Pr2aAT"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971747483654","text":"RT @txtdariweipi: W in WayV stands for wibu"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971772592132","text":"@AlexGlitter7 🤣🤣🤣🤣🤣🤣"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971747422211","text":"NAUULOL NAKO KAY DERY PLS LANGG 😭 https://t.co/EnlrBH4Rp6"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967570006020","text":"@_qxi7 اول شي استخيري وتوكلي على الله اذا شفتي تسير في امرك هذا فهو خير واذا شي تعسير فهو العكس واسمعي من اليوتيوب كثير ناس شيوخ تكلموا بخصوص ذا الشي"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727959160377348","text":"RT @_snbth: นันแอนด์เดอะแก๊งค๋ https://t.co/7XBEoG2rAZ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975950163970","text":"RT @x__warith1: When you #TradeOnOwlet you reach out to a wider audience plus you get to keep a nice relationship with your customers \n\nIf…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937748992","text":"RT @musicadelpv: La playlist de Halloween en Valencià\nhttps://t.co/Of6tigGZ3t"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975941951495","text":"RT @Elifnaz2023: SOYLU: Sandıkta beraberlerse, cenazede de beraber olsunlar\n\nSeviyorum bu Adamı\n\nEğip bükmeden, direkt söylüyor gerekeni❤…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937593348","text":"RT @Bandidosfrasess: Dejé los celos y me puse a pensar que cada quien está donde quiere estar y pierde lo que quiere perder."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975962746881","text":"RT @okayydior: Bruh pushing 30 looking up to Carti"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975950327817","text":"RT @RoxanaDivaDiva: P https://t.co/JuYgS48lxR"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760054272","text":"RT @RGVzoomin: AASHA ENCOUNTER Trailer releasing in 30 minutes at 9.30 Am  ..Film based on  horrific gang rape murder and Encounter on NOVE…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975954382848","text":"@jolofairy Benerr cantikk bangettt, aku aja yg awal liat kagett kirain siapaa😭😭😭😭"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975929274371","text":"RT @tunebubble: Enjoy some Pop on #Spotify\nIncluding\n\n@shadowsofearth2\n@Prabath13\n@abfierce\n@markcbh\n@SophieDorsten\n@iamifbywhiskey\n@uphmus…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760005120","text":"अगर देश के युवा को सड़क पर आकर धूप में बैठकर पढ़ाई को छोड़कर भूखा रहकर अपना हक  मांगना पड़े तो फिर सरकार को परीक्षा और परीक्षा का ढकोसला बंद कर देना चाहिए \nसुन लो प्रजा परेशान है.\n#97000_शिक्षकभर्ती_जारी_करो\n@myogiadityanath \n@drdwivedisatish\n@suryapsingh_IAS\n@swatantrabjp https://t.co/3GoPcR1N1Y"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975941849090","text":"@STaliulu @CashApp Drop your cash tag or Apple Pay or PayPal or Venmo or zelle and get spoiled instantly ❤️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975929143298","text":"RT @twnti3s: จองอูควงชายไม่ซ้ำหน้า แต่งหญิงทุกปี 5555555555555555555555555555555555555555555555555555555555555555555555555555555555\n\n#JUNGW…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975933341700","text":"."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975933550601","text":"RT @animemeyoutube: Sounds about right\n\nANIME MEMES ~ Highschool DxD\n\nNew Video: https://t.co/v8iHawx6lU https://t.co/K2ob9EW1Fb"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975941722113","text":"RT @GiveAwayHost: $100 in 24 hours 🎀\n\n-RT + Follow @gkhosts (🔔) https://t.co/8UWU0DoPvf"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975954378755","text":"@nico3753 かぼちゃのお饅頭🎃\nうまそう！！\nかぼちゃケーキとかも\nめっちゃ好きです🎃❣️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975933513728","text":"Mano é copo de verão, enche ele bebe um pouco, vai no mar volta bebe mais e assim vai https://t.co/qssQlRnhV1"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975945965570","text":"RT @BR31_Icecream: ポムポムプリンキャンペーン\nついに＼明日／開始🍮\n\nみんなでせっせと準備をしてきた\nアイスクリームショップは準備万端です★\nみんな遊びに来てくれるかな？ドキドキ https://t.co/kBW9FhRDIw"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937589248","text":"RT @Moskirivo: 🎃Happy Halloween🍬 https://t.co/1k8lkabQNE"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975966953474","text":"RT @AamAadmiParty: लगता है Amit Shah जी अपनी दूरबीन का Cover हमेशा हटाना भूल जाते है।\n\nइसलिए उन्हें Yogi के #CrimeStateUP में बेटियों के सा…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975929217024","text":"@ukachanMa とろけるくらいの愛情❤️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975941730305","text":"RT @INCMP: मोदी है तो महंगाई है। https://t.co/JAQvEJpoNH"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975933550596","text":"RT @NastyDani_: oops 😌 https://t.co/rHW2S5DaBw"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975962882050","text":"@giraluna1996 Claudia hija mía relaja un poco que te da un pampurrio algún día!!!😘"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975941787651","text":"hwa and yeo as haitani brothers https://t.co/vSlfKeyzH6"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937593345","text":"오깅 저는 오늘저녁으로치킨먹어요 마싯갯죠\n\nI vote #BTS  for #TheGroup  at #PCAs   @BTS_twt"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937654784","text":"RT @MasculinePeak: Complacency always leads to misery.\n\nMen who don't understand this...\n\n• Are plagued with regrets\n• Live lives of quiet…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975962775560","text":"RT @SavageSaviii: दोगलेपन की भी कोई सीमा होती है। https://t.co/REuzYOFHnT"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975967002625","text":"que isso caceteee https://t.co/D2aqyrlfNh"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975958728706","text":"RT @Arturo2L: Deep in the forest!\n📸 direxie via Reddit https://t.co/0JDHt9oZNh"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975941722112","text":"RT @CryptoGeum: $10 || P460 in 3 hours\n\n- RT &amp; Follow @GawsStiph (🔔)"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975962701832","text":"セベクちゃんもレオナちゃんも可愛いすぎて心が張り裂けそう、どうしよう、困った、、、"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975933407234","text":"RT @viewaranya: ฮาโลวีนที่สุดสำหรับอีหมานคือ จองอู แทยง แต่งเป็น จุนซูแจจุง"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975950163969","text":"RT @imyourthalia_: 🔥11.11 Sale🔥 \nขอคนละรีนะคะ🙏🏻\n\n👉🏼Onlyfans 30% off (7$)\nhttps://t.co/uCVyaeG96o\n👉🏼แอคล็อค 111/เดือน (ปกติ 299), 299/ถาวร (…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975958720515","text":"Need these party pics instead of couples costumes pls https://t.co/kaWK6ldBK5"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975966953475","text":"RT @syzygy___: ฮาโลวีนประเทศไทยที่ยังไม่คลายล็อกดาวน์ https://t.co/SPyY2zVsS7"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975950340103","text":"習近平の「思い上がり」が見えた、共産党「指示文書」のヤバすぎる内容(現代ビジネス) ー「富豪から資産を没収して、普通の市民を救済するのだ」← オルバーンを見ていてほぼ確実に救済しないと思う。鶴の一声でできるのにまだやっていないから（没収は自分が必要だから）。\nhttps://t.co/zV4RuPUcVa"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975958548485","text":"@Se2_ju 😮"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975929192454","text":"RT @ixxmmiii03: แจก80ให้มินโน่ชิปเปอร์ (ถ้าพี่แจมินอัพไอจีเค้าเพิ่มอีก20😭😭) รีอย่างเดียวพอคับๆ https://t.co/Asv7DPRlEt"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937609728","text":"RT @dekaiebi: しみじみ。 https://t.co/EVWiu6uj0s"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975962742786","text":"RT @F0RHENDERY: YOU CAN CLEARLY TELL THAT THEY ARE WAYV https://t.co/KZmjf5nyMP"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975941910537","text":"@jlsteeg No sé refiere al \"uso\" de ropa de segunda mano,si no a la \"compra\" de ropa de segunda mano y el negocio que hay detrás de ello,organizaciones que recogen ropa o libros de texto gratis y los revenden,perjudicando a los trabajadores de esos sectores que pagan impuestos y SS"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975954440201","text":"RT @theseoulstory: Reasons why you need to watch 'Yumi's Cells' &amp; look forward to season 2\n\n🐸 Successful webtoon adaptation combining live-…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937601537","text":"⚪︎ 10/31 23:00 #23時\n\n⚪︎ #スクワッド #賞金ルーム\n\n⚪︎ 1OOO × P https://t.co/fnDIWCTbwB"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.LogEventsToConsoleConsumer[0]
+      Current speed: ∞/sec.  Average: ∞
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937527809","text":"RT @girlmeetsNG: アメリカの飛行機、イッヌが一緒に乗れるのでマジでこういう光景が普通にあります https://t.co/hjcoLjfqGf"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975929139204","text":"RT @horneyclass12: ✨বাগানি https://t.co/YHonxZ4Wrn"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967557435398","text":"RT @zella1_: امبارح شفتك بالحلم"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727967578361856","text":"RT @Mrrycrzl: Kapoyag pa uto oy"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975937593359","text":"RT @tearsofyouth19: กลับบ้านเรากันเถอะพี่จันหนวด เดี๋ยวพวกเขากัดคอเอา https://t.co/JX1KvH8GVH"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727971760062466","text":"@nekomimi_tw する！！"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975967019016","text":"RT @darmaaja36: Aren't idiots! your butt in the road. You have received a soul. A tax-supported, compulsory\nCombined total do.Success that…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980144418825","text":"RT @yayee2548: ไม่มึงแล้วแบบ ท่อนล่างคือรัตนโกสินมาก 55555555555555555 หรือแต่งเปนผีห่าอโยธยา https://t.co/xlITN8GHYP"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980123451396","text":"RT @yeristgrm: [INSTAGRAM POST] - 10P\n\n해피 궁로윈 🎃 #궁 #신채경 은 바로 나 좌우당간 이게 무슨 일이냐 !!!!!! 대략난감\nhttps://t.co/3Vm2AECXcV\n\n@RVsmtown #RedVelvet #레드…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980123672577","text":"@Monarchs_hq Well deserved ✅✅✅✅\nCONGRATULATIONS QUEEN\n#AwardWinningQueen\n#BBNaija"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980152852480","text":"Preiser Elastolin 3010 - \"Adler 1985\" - 11 unpainted 70mm kits mint in box https://t.co/b2RKt1x3V7 eBay"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980156997632","text":"@6zZNIJWkPohX9TP うん楽しもう！"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980157046793","text":"RT @papeushikaeru: このメンバーで人狼しました。\nhttps://t.co/DYAWf2u20x https://t.co/JxbLUGwWe8"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980148723718","text":"RT @kuro_kemo28: skeb Commission🏖 https://t.co/Bby3KtXLcl"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980148674561","text":"@niko_56n_0712 ありがとう😭💖"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980157075461","text":"RT @knmacaron: เต็มใจให้หลอก💀💀💀 #ppkritt  #PPcorpsegroom https://t.co/VSRKeRir8m"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980144476160","text":"RT @ffragilee__: พี่บังฮาโลวีนมีแน่นอนแหละ เขาพูดในไลฟ์แล้ว แต่ต้องมาลุ้นกันว่าปีนี้จะแต่งเป็นอะไร เห็นพูดถึง squid game ด้วย 🤩 https://t.c…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980127825924","text":"RT @Prinz_3D: We've seen many coins do well on the solana blockchain, most of us missed out on them but i can say with full confidence dat…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980123443200","text":"RT @Pandit_G_143: वो मेरा दिल दुःखाना चाहती है ,\n.\n.\nमुझे उसकी मदद करनी पड़ रही है..💔🙄 https://t.co/lpgXRbLYNA"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980157059074","text":"RT @skipberat: foto bareng plis https://t.co/3O7TmclEyn"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975929204741","text":"暴れてきました🥺 https://t.co/AhS3RLl6JW"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980157050888","text":"@Kzi961 焼きそばパン買ってこいよかずい〜"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980161200132","text":"@jaemcityx Ngak kak. Ngrasain sakit gigi sumpah pengen nangis pgn emosi😭"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980136030208","text":"RT @pledis_17jp: #SEVENTEEN #MINGYU \n\n@GINGER_magazine https://t.co/ZAA0NuleHW"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980127711235","text":"RT @SMTOWNGLOBAL: Trick or treat!👻 #HENDERY in the house as ‘Detective Conan Killer’🎃\n\n#헨드리 #黄冠亨 #WayV #威神V\n#SM_Halloween_House #SMTOWN_WON…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980148658177","text":"RT @i4mZhee: 100.000 IDR / 120 menit\n- rt this + my pin 📌"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980131909636","text":"RT @ArkTheAce: హెలో ప్రెండ్స్! మా \"పవనాలు\" సారుది చాలా విష్పస్టమైన వైఖరి. ఎవరికైనా డవుట్స్ ఉంటే, రేపు విశాఖ దీక్షలో తండోపతండాలుగా పాల్గొంటే…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980161273859","text":"@dsichengcart win binaliw ni jeno"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980148830209","text":"@only1makwa @KiDXsa 💣💣💣💣💣"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980152856581","text":"เค้าจะโกรธกุมั้ยหรไนยบวนำาำสบกวกวหง"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975958564870","text":"#Jo1  \n #金城碧海  #空はつながっとんねん \n今日は朝は晴れ☀️てたけど午後から雨☔がふってきた。\nカイちゃんも空見てるかな〜？\nカイちゃんが元気にしてますように。\nカイちゃん大好き！🖤🖤✈️✈️\nカイちゃんのGOは何回きいても最高なのよ！去年のハロウィンのカイちゃんかわいい🖤 https://t.co/qzx7UmIdBx"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980153032705","text":"Pazarları ilk temizlik mi yapsam yoksa kahvaltı mı karar veremiyorumm günaydınnn"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980136026121","text":"RT @shnij: &lt;체험단 응모하세요&gt;\n🔍아마스 발라쓰 로오션\n\n🗓️응모기간 : 11. 17. 14:00까지\n\n✅응모방법 \n홈피\nhttps://t.co/6p7RArXdS0\n틱톡\nhttps://t.co/jQh4dlmDcj\n\n🔍당첨자 발표 11월 22…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980123521028","text":"@kotaro_outsider 我が子の中学校とdocomoショップとサンマルクカフェです。"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980161241090","text":"RT @Awaix94415790: @BiggBoss @realumarriaz Star Boy\n#BBKingUmar"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980144480259","text":"RT @thepovgod: dis shit hit different 🍆🤪💦😩💦 https://t.co/bVH8J35a7C https://t.co/Ah8IagusZ9"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980140281856","text":"https://t.co/vklUSNz4zU"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980152864768","text":"RT @aysk__tatsu: 【交換希望】\nボイメン・ハロウィンライブ\nオンラインくじ・C賞 生写真\n\n《譲》本田(オフ)・勇翔(オフ)・平松(ライブ)\n\n《求》辻本・吉原・水野\n\n郵送でのお取り引きになりますが、\n検索、FF外からでもお声かけください https://t.…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980152856576","text":"@Sen0618sorars ちっきー観に来てくれてありがとう💗"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980144414724","text":"RT @ispraews: พชยกลับแล้ว เดินจับมือกับเพื่อนตะหาน น้ารักอะ 555555555 https://t.co/otG0zwxFmL"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980136140806","text":"RT @lenatheplug: Goodnight 😘 https://t.co/3NUm8fZ2HU"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980127715333","text":"@turi2018 ハッピーハロウィン🎃るるちゃん笑"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975962882049","text":"RT @ALfhhdALsyad: كل التدخلات الخارجية بالشأن العراقي وخصوصاً موضوع تشكيل الحكومة مرفوض من قبلنا نحن \"العراقيون\" رفضاً قاطعاً…\n\n#العراق_أولا"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980144631808","text":"RT @bambiblacks_uk: $1000 of FREE CONTENT for the next 20 subscribers 🤪 (link in comments) https://t.co/5qFrZGGiDk"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980144414721","text":"RT @minyeooool: เจอหวังอีป๋อ: กรี๊ด❌ \n\nเจอหวังอีป๋อ: ขอเข้าไปถ่ายรุปสองนิ้วเพื่อเสริมสิริมงคล☑️ https://t.co/NH7mU00vL4"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975946031112","text":"11 people followed me // automatically checked by https://t.co/BOEimMXDXo"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980152885250","text":"@ukhtiherlinahMH Wkwkw gk papa master, lagi berbicara dg diri sndiri aja"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980131831812","text":"RT @RBLei98: Retweet if you think Morrison will totally embarrass us in Europe.  #auspol #G20 #COP26"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980157046786","text":"WE ALL ARE ONE WITH ITZY\n#ITZYxRedAngel2021 #ITZY \n@ITZYofficial"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980161376261","text":"q linda m hago jennista https://t.co/71okWQAoL1"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984338722829","text":"RT @synchroaki: 【NSFW🔞】\n着物の下は凄いRNZ https://t.co/g3kEj9hlph"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980127715336","text":"जिल्हाध्यक्ष  राष्ट्रवादी काँग्रेस पार्टी,पालघर जिल्हा तथा विक्रमगड विधानसभेचे लोकप्रिय कार्यसम्राट आमदार जनतेच्या हृदयातील आपला माणूस आदरणीय मा.श्री. सुनिलभाऊ भुसारा साहेब @SunilBhusaraAap आपणांस या जन्मदिनी उदंड आयुष्याच्या अनंत शुभेच्छा.\n@NCPspeaks @PawarSpeaks @Jayant_R_Patil https://t.co/0QSlsGh4pi"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984322121732","text":"RT @2lllove: ﴿وجاءتهُ البشرى﴾\nيارب شعور هذه الآية لنا جميعًا ."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984347242505","text":"https://t.co/UQ3iDtltVM"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984326316034","text":"اللهم يا جامع الناس ليوم لا ريب فيه اجمع بيني وبين فرحتي وسعادتي وتوفيقي إنك على كل شيء قدير . \nاللهم اهدني لما تحبه وترضاه وتولني في من توليت . \nاللهم اشفني وحقق لي ما اتمنى يارب 🤍🕊"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984317927426","text":"إجابة سؤال مسابقة #بنك_البلاد: جميع الخيارات - شاركوا الآن في مسابقة #ادخر_مع_البلاد لفرصة ربح أجهزة iPhone13"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984355573761","text":"RT @nudfod: Pasta lovers🤤❤ https://t.co/S1AnsRy5XL"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984322007041","text":"RT @hinatasr19G: เอสเอ็มกูขอรูปคู่สองคนนี้หน่อยยยยยที่สุดแห่งโจ๊กเกอร์ควีน 😭 https://t.co/rbdFfsgwZ1"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.LogEventsToConsoleConsumer[0]
+      Current speed: ∞/sec.  Average: ∞
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984322056192","text":"RT @MusaOnal6: Her zaman önceliğim yaşlı ve olgun kadınlardır https://t.co/6f43gGUpps"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984355504133","text":"RT @samajwadiparty: माननीय राष्ट्रीय अध्यक्ष श्री अखिलेश यादव जी का हरदोई दौरा।\n\n#समाजवादी_विजय_यात्रा \n#बाइस_में_बाइसिकल\n#नयी_हवा_है_नयी_स…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984334602246","text":"RT @tokayuzu_ch: RT対象④\n足だけ見せてやろう…\n#Zoooオーディション   #ミクチャ  #RT拡散希望   #新人vtuberと繋がりたい   #新人Vtuver   #新人vtuberを発掘したい  #Vtuberオーディション https://t.c…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984338726918","text":"RT @kuran_yukimin: Oculus Quest改め『Meta Quest』、Facebookアカウント不要へ方針変更 https://t.co/PIdmU50ghp @engadgetjpより"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984322007046","text":"@UZA1103 また 伺います\n次回は 別の方と"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984351301633","text":"RT @kattemiru: ／\n毎日フォロー&amp;RTするだけ❕\n#その場で当たる🎯\n🎃 #キャンペーン 開催中👻\n＼\n\n🎀サーティワン アイスクリーム ギフト券🍨\n#ハロウィン の本日がラストチャンス‼\n\n🌟応募方法🌟\n1⃣@kattemiruをフォロー \n2⃣10/31 23…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984317800449","text":"@lucy_on_ash 笑っちゃった\n最初期からの知り合い(な筈)なので安心して"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984317796352","text":"RT @vaccinated_DK: โคตรไม่เห็นหัวประชาชน ปกติพรีออร์เดอร์นี่คือคนจ่ายเงินก่อนควรจะได้ก่อนนะ อะไรของกาชาดวะ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980127715329","text":"RT @yuanhwa_Flower: 와 터미널인데 코스프레 레전드 뭐지 진짜 사람인데 https://t.co/zRDfWY9vG2"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984326184966","text":"RT @thecryptomaxim: 🐶FalconZilla\n\n🚀 Launch on #PancakeSwap on 14:00 UTC On Oct 31th !\n\n#FalconZlla #BSC is about to launch, are you ready?…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984351436808","text":"@ItZ_HaSeeNa Who"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984334741504","text":"RT @domiingueezzz: suavementeeee besameeee"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727975950188550","text":"@Somayehm11 روحش شاد و یادش گرامی \nاللهم صل علی محمد و آل محمد و عجل فرجهم"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984347172869","text":"RT @Bhupali_Roy: My soul connects with @ShamitaShetty\nShe is the most honest &amp; pure soul out there.. \nSo much respect &amp; love to u my baby..…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984343040002","text":"@hyunjoker https://t.co/dCyYBrOuOy"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984351531010","text":"@BertyJam @RebuffTheMuff @vanlies @talkRADIO @JuliaHB1 So not you’re losing the argument or have realised you’re mistaken instead of taking a step back and saying “hmmm, something to think about,”\n\nYou resort to abuse and making stuff up about me.\n\nJust block me now Rob, because that’s where it’s going isn’t it?"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984321994754","text":"RT @tonguewasabi: べーっ\n#シャニマス\n#ハロウィンイラスト \n#halloween2021 https://t.co/OZOiA58tQ8"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984322076672","text":"@Ally__14 GOOD AFTERNOON 🙂"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984321945601","text":"RT @BrasilMOO: Tópico sensível: HwaSa e sua sobrinha. https://t.co/0O6vR8QedS"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984355500032","text":"RT @TEAMJAYBHANUSHA: Trending at 13 th position Jee retweet and tweet fast \n\nSpeed up \n\nALWAYS BESIDES YOU JAY https://t.co/7vO00OfqjP"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984338771969","text":"分別とか大丈夫そ？？？？？"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984347160577","text":"RT @moonclover94: 지금 127 리허설하는데 해찬 도영 태일 성량 개쩔어지금\n태일이나오는디 같이계신분들 헉하구잇어요ㅠㅠ시바류ㅠㅠㅠ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984355577860","text":"無常のスケルトン衣装可愛いっしょ？^^❤︎"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984342990849","text":"RT @ppatchy_a: อุแง พี่ล้มแล้ว พี่ใจยวบ เจ้าโมจิพีชยืดๆๆๆ นุ่มฟูๆ https://t.co/XmF9B4whrv"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984347156480","text":"RT @honjosuzu: ドンキ様様です…☺️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984330407938","text":"RT @TiranoSUHrus_: ไปถ่ายรายการวิทยุ                ฮาโลวีนจริงๆ https://t.co/BUbZYavLaN"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984317825029","text":"RT @johnnys: #HappyHalloween2021 from the members of #TravisJapan!\n\n👻👻👻👻👻👻👻\n\n↓ Follow them on IG for more! ↓\n\nhttps://t.co/e6BdIsOEST https…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984330412038","text":"RT @suchaadad: ทัวร์นรกแถมฟรีไกด์+ข้าวเช้า 😈👻 #halloween2021 https://t.co/CloYwjVNXA"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984330465282","text":"@LongHairedDomme On my way 😏"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984338796546","text":"RT @soobaur: we are all 0ne kp0p c0ncert txt https://t.co/QxPx7d7o8Y"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984322162690","text":"RT @Bobbywihdattool: Thicc girls love to sit on your lap and ask “am I heavy?” A lil bit but I love you so imma lie 😭"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984317812737","text":"RT @tiasuppersready: เบลล่าตอนรวบผม https://t.co/P8ov1XVPr3"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980140224516","text":"RT @CoinEverest: The #EverestCoin NFT Marketplace is launching soon - and you can buy character NFTs that can be rented out in our upcoming…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984342974467","text":"RT @pitta_pittafan: #포레스텔라 #강형호 #PITTA  \n\nPITTA COMING SOON\n\n10월 26일(화) 12:00 선공개!\n[THE NATION]\n\nhttps://t.co/D34IupxocV"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727980131831818","text":"RT @Q10NFK: 오..\n텐 이번에 존나 멋있네..\n해찬이는 이번에 드라큘라?\n오.. 정재현은 뭐임?\n헐.. 예리 이쁘다.. https://t.co/MdGHB1todj"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984347242506","text":"RT @galdeiasb: já dizia lutero é na sola da bota é na palma da mão\n\n#ReformaProtestante504anos"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516372481","text":"RT @applesfera: 'Invasión' no es una serie lenta ni aburrida, es un estilo de ciencia ficción más humano https://t.co/3Bx5N7o24Y"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988541464581","text":"さんりおのえるびんとへいちょはパパの顔なんだよな"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516319238","text":"RT @Anum_shono: I don’t know what their past was like. All I know is that when I look at them, they feel like they’ve never fallen this har…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988549935111","text":"Wir könnten Kriege beenden."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988520501250","text":"@prkjiurs kangen ga ya?🤔"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516360193","text":"عريس جديد؟ أو صار وقت التجديد؟\nاشتري الآن منتجات المنزل LG من عبدالواحد واحصل على خصومات مذهلة تصل حتى 40% و توصيل مجاني لباب بيتك\nتسوق الآن: https://t.co/AgXFrpwbDs\n#عروض_استثنائية https://t.co/yz4cjOEFbj"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988529012740","text":"Hüseyin Yıldız : \"Merkez Bankası’nın güven sorunu\" https://t.co/upvxAXMu4L #Cumhuriyet #cumhuriyetgzt @cumhuriyetgzt"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988520517635","text":"@jjj_j0607 はじめまして😊\nRTありがとうございます♡\nまた映画館でるろ剣みれて監督舞台挨拶は嬉しいです💕\nこのイベントには大友監督よく来てくれるのでありがたいですね☺️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516253702","text":"@tos\nカレーライスあっといち\n19878 ベテラン\nsf気にしません\n主:PU絵名\n募集:星4リーダー(出来ればスコアアップ)\n無償でも有償でもライフの支援助かります٩(๑'ω'๑)و\n解散:絵名のまたね〜\n再ぼ:絵名の自撮り\n炊き:部屋内でお願いします\n#プロセカ協力 \n#プロセカ募集"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988537278464","text":"RT @TheJanasainik: https://t.co/bEwG0NZxit"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988549804035","text":"RT @tayspiedpiper: its the fact that the person (in the first ss) is the same person that has actually liked/rt even complimented my mashup…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988537225222","text":"RT @gudetama_sanrio: ひょっ\n#ハロウィーン https://t.co/RqPEZK9Shh"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516294661","text":"RT @wntrsgf: winter said she really wanted to do haku but for some reasons she became the squid game doll https://t.co/2u6XAQpVgZ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516306954","text":"RT @anon_551: チャンピオン🏆😎🏆 https://t.co/XPnLJOY5rt"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988528906241","text":"Huhh https://t.co/jLU6nNZTqW"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984322019328","text":"@TsogBadrakhhh https://t.co/gkpRcmCPQZ\nhttps://t.co/X4dKxV4Upn\nhttps://t.co/w5pSiBiAEZ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988520669188","text":"@wuhct @AChad92 Delusional"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988533084161","text":"@Milind__Madhav @albd1971 I Know."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988520669185","text":"RT @WholesomeMeme: https://t.co/VuLeDlAR2m"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988533096448","text":"RT @gimgimmethat: อีหมานจริงจังกับคอนเท้นงานฮาโลวีนกว่าคอนเท้นโปรโมทวงอีก อีนี่หนิ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988529012736","text":"RT @AlexOndoa_: « Tout le monde ne doit pas connaître ta maison. Certaines amitiés doivent se terminer en route. »"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988520505346","text":"Terus katanya doi pernah mau bayar orang buat terjemahin cerpenku supaya dia bisa baca ..."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984338780160","text":"RT @nurdayana_arif: Unpopular opinion . Aku stress ya p kedai makan yg menu mcm ni . Bcuz I dont know wtf the drink and food is d sebalik n…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984317825024","text":"@JoshLekach @GovJVentura @TheoVon I bet Jesse didn't know that 99.97% of people not vaccinated live as well and that's better than 1% this guy is full of crap!"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988524707849","text":"@speed_horseG1 良いわね！\n薙刀も一緒に借りるのよ！❤️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516466695","text":"RT @MayWardNC: mag arteRT muna ako MAYWARD SPOOKTUBRE\n\n#MayWard\n@maymayentrata07 @Barber_Edward_"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988549849093","text":"https://t.co/T0QH5DBJYJ"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545654787","text":"RT @pj_sekai: 本日追加された\n『ロウワー』セカイver.\n🌟HARDプレイ動画を公開🌟\nセカイver.ではMEIKOと25時、ナイトコードで。が歌唱🎙️🎶\n\n#初音ミク #プロセカ https://t.co/r28zjeiVxu"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988524707846","text":"RT @SMTOWNGLOBAL: 🎃 The SM Halloween House welcomes #TAEIL as ‘A Boxer’🥊\n\n#태일  #NCT #NCT127\n#SM_Halloween_House #SMTOWN_WONDERLAND_2021\n#SM…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988541526016","text":"RT @iDsyEB9L0DZ2Gaw: &gt;\n بسم ﷲِ مجراها و مُرساها..\n\n#العراق_أولا &gt;"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988537446400","text":"RT @GenshinTarot: Though water's reflection is but an illusion, it reveals the truth nonetheless 🔮✨🌊\n\nAnimated by @RosyMiz https://t.co/lL2…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988528910340","text":"#coloringtherapy #coloringpage #coloriage #coloringforadults #coloringaddict #adultcoloring #colouringbook #adultcoloringbook #coloringbooks #coloringbookforadults #PoopypantsBiden\nOrder Now: https://t.co/0hkZ7AgeIH"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545679368","text":"RT @_____ritaaa: もう優勝すぎる😭😭😭😭😭💗\n海賊は優勝すぎだろぉぉぉぉ😭😭😭😭💖"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516253701","text":"RT @JnP9Q3zjAxHerhI: 랜덤 돌려 나온 캐릭터 그리기\n\n#라스트오리진 #LASTORIGIN\n #ラストオリジン\n#흐레스벨그 https://t.co/ivJBeEgt67"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545658884","text":"RT @Vince454: Happy Halloween 🎃🍭🍬👻\n\n#ねんどろいど #Nendoroid #GoodSmileCompany #ToyPhotography #Vince454PhotoDesu #GSCfiguresIRL ⁠ #Nendography #…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988512165890","text":"@BOjagbemi You sef reason am abi?"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988524642309","text":"@Sorqti_G36C くれる？🤤🤤🤤"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545658881","text":"RT @Bacon_subb: อึนอูในยนว.บอกว่า  เจอร้านอาหารดีๆทีเชจู แล้วก็รู้อีกว่าเดี๋ยวโรฮ่าต้องถามแน่นอนว่าร้านไหน อือนูเลยบอกว่า ถ้าผมบอกไปว่าคือ…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545687557","text":"RT @3decox: พี่ใจเย็นได้มั้ย หนูสับสน https://t.co/hIesrRx7xe"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988533202944","text":"RT @dailykunxd: 211031 #KUN Instagram Story Update 🐻🧡\n\nLmao, I can't with him 😂😭😭 https://t.co/SaZbnlYzrP"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988537294856","text":"RT @SMTOWNGLOBAL: BOO!👻 #JISUNG has arrived at the SM Halloween House as ‘SON HEUNG MIN’!⚽️\n\n#지성 #NCT  #NCTDREAM\n#SM_Halloween_House #SMTOW…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988524642305","text":"@sirabu_wife_ 자기야 나말고 다른 자기가 있어냥?"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516249600","text":"RT @shojitomoharu: 投票うぃったので外食します。"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988529012741","text":"Choi Beomgyu | Rain or Shine- Elaine (K-drama: A Piece of Your Mind)\nhttps://t.co/VmcIXoPWvp https://t.co/e4pBo681ro"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984342978564","text":"@AhmedMayta Already a #1 D"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988516360196","text":"RT @siricharis: komik falan değil. çok büyük saygısızlık. erkekler gerçekten çok tiksindirici olabiliyor ya."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988541472769","text":"RT @Minamiakahire: ⚠️日本淡水魚好きは絶対見てください⚠️\n観察ケースを使う時の注意点です。風景が写り込むと、採集場所が特定され、乱獲されたり、業者が来たりする可能性があります。\nつまり、魚を存続の危機に晒してしまうわけです。\nインターネットに写真や動画を上…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988533239810","text":"@inmybl00d_ JAKA SŁODKA ZAKŁADKA"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988529008640","text":"@Stefangreenwood @MakeMeFufu You can only eat certain meals when you wear Invisalign 😂"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545736706","text":"RT @HergunYeniBilg: 🌧️ NASA, ürettiği yapay bulutla yağmur yağdırmayı başardı.\nhttps://t.co/zgi0z37cmd"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545613825","text":"RT @SMTOWNGLOBAL: 🎃 #JOHNNY has rolled up to the party as ‘Polar Bear’!👻\n\n#쟈니 #NCT #NCT127 \n#SM_Halloween_House #SMTOWN_WONDERLAND_2021\n#SM…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992723353601","text":"RT @naughtymariex: Snuggle Sunday, naked and warm in my bed ❤💋 https://t.co/Dc4Cu46bkd"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992710631426","text":"肉(´；ω；｀)ローストビーフ的な肉を欲するレベルで疲れてる(´；ω；｀)"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992706469890","text":"@PopCrave iconic https://t.co/vpFIHiucxp"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992723353600","text":"RT @QueenMaraym: 🌹ربما يكون رزقك أنك سليم مُعافى من أي مرض  ،، \nوربما ستر من الله لكل أخطائك ،، \nأو لُطف منه يُنقذك في آخر لحظة ،، \nأو محبة…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988545835009","text":"RT @JayJadeMoon: If she doesn't sound like this you not hitting it right https://t.co/qVny1c6hPi"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992714743817","text":"RT @SexyTiksH0ts: b https://t.co/AxYSOwxuzk"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992710733829","text":"RT @Kaddamry: شهادة طب للبيع استخدام حشمة"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992735715330","text":"貧乳が巨乳キャラの仮装しようとするのイラつくな。見栄を張るな見栄を"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992714792966","text":"RT @archiveofhoon: #sunghoon is so cute 😭 https://t.co/THuQILuM62"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988533084162","text":"RT @333akina: ところで昨日のライブで頭が爆発した三枝明那くんのスクショ持っている人いませんか？🤯"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988541460483","text":"RT @only_love_dream: 211031 세븐틴 정한 인기가요 퇴근 preview\n\n오늘도 완전 멋있었어 조심히 가❤️\n\n#세븐틴 #SEVENTEEN     \n#정한 #윤정한 #JEONGHAN \n#MY_DREAM_JEONGHAN \n@pled…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992731586561","text":"RT @beliftgallery: ‹#엔하이픈 @ENHYPEN_members› https://t.co/epQENfbsyM"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.LogEventsToConsoleConsumer[0]
+      Current speed: ∞/sec.  Average: ∞
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992706404355","text":"RT @Sa_mi163: 東京リベンジャーズ 極楽湯\n交換探してます。\n\n譲\n⭐︎入浴剤 ブロマイド\n松野千冬\n⭐︎コースター\n⭐︎場地圭介/千堂敦\n⭐︎画像2枚目\n\n求\n⭐︎三ツ谷隆\n入浴剤・温泉饅頭 ブロマイド\nコースター（等身優先）\nその他、未所持\n\n※纏めての交換優先…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992739962880","text":"RT @RamCharanCult27: No.1 hero @AlwaysRamCharan \n\nFamily fans backstabbing ni thattukoni nilabbaddav chudu your the greatest 🙏🙏🙏\n\nNilantodi…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992714821638","text":"RT @reysantiago2424: Then it was that Jo, living in the darkened room, with that suffering little sister always before her eyes and that pa…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727453698","text":"RT @jjjjoonn: \"في المواساة يفوز الحنون لا النصوح.\""}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992744288256","text":"RT @ehlboogie: But she told you she was 21 after you said “please don’t tell me your 21”. You proceeded to initiate a sexual conversation w…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992723132418","text":"RT @saNCTuaryy__: aespa 5th member https://t.co/VUuAZJdcBN"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992710557696","text":"RT @tanawatofficial: น้ำมันแพงไม่พอ ล่าสุดผักแพงแล้วจ้า จะซ้ำเติมประชาชนไปถึงไหน ?\n\n#ม็อบ31ตุลา64 https://t.co/qdgdSbBFP3"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992718942209","text":"拡散！\n引用元チェック□✔ https://t.co/VNGqpPeS4E"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984334585865","text":"RT @amflife: This plan is cool, however, this plan goes over a governmental cycle. All governmental branches should be committed to make it…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992739917825","text":"RT @MyPeterpanIsEX1: @Tejranlove1 TEJRAN OUR HEART.\nbohot serious disease hai yaar."}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992744239104","text":"RT @LucyST2021: So cute Halloween 👻😇💕\n\n#CTRPANUWAT\n@CTR2DAB https://t.co/cqFpnsQb5L"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992740098056","text":"@goth2020 wish i was there to eat that pretty pussy out"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992744103938","text":"RT @onyourjane: แฮปปี้ฮาโลวีนของจริงคือ ยอดติดเชื้อโควิดไทยวันนี้ 12000+ และเสียชีวิตเกือบ50ราย และพรุ่งนี้เปิดประเทศค่า หลอนพอมั้ย"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992719065088","text":"RT @na_iddy: Wewe mkumbuke sana mungu ndo utajua sio kila neno nakupenda linahusiana na mapenzi...🤦‍♂️🤦‍♂️🤦‍♂️"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992731582471","text":"나 계좌에 빈털털이 됨 녈흘 있다가 월급 들어오면 그때 또 힘낼게 https://t.co/pEdpDuh7sy"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992718987266","text":"RT @DECO27: ハッピーハロウィン！！！\n\nヴァンパイア (Miku Only) https://t.co/YFxCT6j0Ky"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992723140610","text":"RT @viviko__18: HAPPY HALLOWEEN🎃\n #ハロウィンイラスト \n #絵柄が好みって人にフォローされたい https://t.co/I8YwRFmCKG"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727404546","text":"街灯にぶら下げた想い\n\nいつも君に渡せなかった\n\n夜は僕達を遠ざけていったね\n奥華子/変わらないもの"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992731574272","text":"RT @cuitantheboyz: 💚 deobi.. kalian hrs tau ini\n  https://t.co/eS7doiNOHP"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992744103936","text":"RT @g_eneglaer: ไม่เน้นธีม เน้นมาใครมามัน https://t.co/LUDjPlxR1B"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992706428932","text":"RT @blkitachi: #jjk https://t.co/Hu9qf2BVIV"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727408644","text":"wahhh amazing https://t.co/3SfbaRmWfc"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727506944","text":"@Delisin_35 Ooo epeydir karşılasmiyoruz..Günaydın..Ben de Keyifli pazarlar diliyorum🙏🌻"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727334919","text":"ehjk fiklv jlmw\n\n-_-なたをとても愛しています\n\nسـيّـفـىْの_ FF41_の_\n\nنِمَشٍيِّの_ KM11 _の_\n\nفؤغـَٔأَ َكَلُٔؤسئَتのARABの_\n\nـــꝏ MY693 ꝏــ.سيتي ماكس\n\nevhdsABWCJEF كـٍـٍـؤٍـٍـﺩ̲bci go خـّـصْــﻣ̝JVXuckdwxrb]\nmnx"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992723316736","text":"Я немного поспамлю и успокоюсь не обращайте внимание https://t.co/GCJwDr6Qfd"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727392265","text":"RT @mstandformore: จองอู : \nแต่งหญิง ❌\nแต่งหญิงแบบมีผัวให้ควงมางาน ✅✅✅"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727441412","text":"RT @SMTOWNGLOBAL: BOO!👻 #JISUNG has arrived at the SM Halloween House as ‘SON HEUNG MIN’!⚽️\n\n#지성 #NCT  #NCTDREAM\n#SM_Halloween_House #SMTOW…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992714743808","text":"https://t.co/pbddAvscyd"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992744157190","text":"RT @SKYa_ndSEA: แต่งเปนเมดูซ่าแบบซอฟเบ๋อ https://t.co/52q8w7uWxj"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727984347324417","text":"@BramhallHatter Hi Steve. That is the good thing about life - sometimes things are great, others less so! They generally even up, though. \n\nIt's called character building, apparently. Have a safe boat trip back down the M6 river  to leafy Cheshire today. https://t.co/obvZbokcWR"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988529045505","text":"RT @bariq_Sudair: الكندي 10 ايام على الشرقية والرياض والله اعلم https://t.co/wHCt2osHPb"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988537352195","text":"RT @banghytricae31: بداية دعم اليوم \n\nرت و منشن اجباري\n\nحسبي الله لا إله إلا هو عليه توكلت و هو رب العرش العظيم https://t.co/09xiS2IkGu"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992727392267","text":"@taeyongn selamat hari minggu, gempa. i wish 4 you 2 be happy. take care and i hope your day gets better"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992731582468","text":"@yeaams Lha wong aku random og mas:)"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992723312641","text":"المراكز 4321 كم مقاومتها للبيع #شركات_tasi https://t.co/aseJ9yHLJY"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727988512104448","text":"RT @tenleefilms: let's talk https://t.co/4sRcaILv2G"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992719011840","text":"RT @AmitShah: Visited the Jungle Safari in Kevadia. \n\nPM @narendramodi Ji’s vision has transformed this place into one of India’s major tou…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992718938113","text":"RT @JuicyFruityyy: ANOTHER ST FN AK47 | ASIIMOV GIVEAWAY! ($400)\n*cannot be exchanged for crypto*\n\nTo Enter:\n\n-RT\n-Like this video:\nhttps:/…"}}
+[40m[32minfo[39m[22m[49m: TweetSpot.ServiceBus.Consumers.ProcessIncomingTweetConsumer[0]
+      Tweet {"data":{"id":"1454727992744239107","text":"@daniyalrajputt Summary rejected."}}
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[41m[30mfail[39m[22m[49m: MassTransit[0]
+      S-FAULT loopback://localhost/urn:message:TweetSpot.ServiceBus.Commands:IProcessIncomingTweet d1ed0000-5b08-80fa-a1c6-08d99c490468 TweetSpot.ServiceBus.Commands.IProcessIncomingTweet
+[41m[30mfail[39m[22m[49m: TweetSpot.BackgroundServices.FeedBackgroundService[0]
+      Exception while reading feed from twitter, restarting feed.
+      System.Threading.Tasks.TaskCanceledException: A task was canceled.
+         at MassTransit.Util.ChannelExecutor.Push(Func`1 method, CancellationToken cancellationToken)
+         at MassTransit.Transports.InMemory.Fabric.InMemoryExchange.Deliver(DeliveryContext`1 context)
+         at MassTransit.Transports.InMemory.Fabric.InMemoryExchange.Deliver(DeliveryContext`1 context)
+         at MassTransit.Transports.InMemory.InMemorySendTransport.MassTransit.Transports.ISendTransport.Send[T](T message, IPipe`1 pipe, CancellationToken cancellationToken)
+         at MassTransit.Transports.InMemory.InMemorySendTransport.MassTransit.Transports.ISendTransport.Send[T](T message, IPipe`1 pipe, CancellationToken cancellationToken)
+         at TweetSpot.BackgroundServices.FeedBackgroundService.InternalReadFromTwitterAsync(CancellationToken cancelToken) in /home/jeff/dotnet5/TweetSpot/src/TweetSpot.Feed.Services/BackgroundServices/FeedBackgroundService.cs:line 94
+         at TweetSpot.BackgroundServices.FeedBackgroundService.InternalReadFromTwitterAsync(CancellationToken cancelToken) in /home/jeff/dotnet5/TweetSpot/src/TweetSpot.Feed.Services/BackgroundServices/FeedBackgroundService.cs:line 87
+         at TweetSpot.BackgroundServices.FeedBackgroundService.SafeExecuteAsync(CancellationToken stoppingToken) in /home/jeff/dotnet5/TweetSpot/src/TweetSpot.Feed.Services/BackgroundServices/FeedBackgroundService.cs:line 61
+[40m[32minfo[39m[22m[49m: MassTransit[0]
+      Bus stopped: loopback://localhost/
