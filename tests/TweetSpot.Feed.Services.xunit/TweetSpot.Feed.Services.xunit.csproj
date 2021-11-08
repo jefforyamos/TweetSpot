@@ -8,6 +8,7 @@
     <RootNamespace>TweetSpot</RootNamespace>
     <UserSecretsId>954358b2-03f4-464c-b77a-352abfb7ffcf</UserSecretsId>
     <Nullable>enable</Nullable>
+    <AssemblyName>TweetSpot.Feed.Services.xunit</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

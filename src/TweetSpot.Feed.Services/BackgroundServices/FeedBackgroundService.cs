@@ -87,7 +87,7 @@ namespace TweetSpot.BackgroundServices
             {
                 var line = await streamReader.ReadLineAsync();
                 if (line == null) break;
-                var tweet = ProcessIncomingTweet.Create(line, GetUtcNow(), _ordinalCount);
+                var tweet = IncomingTweet.Create(line, GetUtcNow(), _ordinalCount);
                 if (tweet != null)
                 {
                     await _bus.Publish<IProcessIncomingTweet>(tweet, cancelToken);

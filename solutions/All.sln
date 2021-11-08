@@ -1,25 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Feed", "..\src\TweetSpot.Feed\TweetSpot.Feed.csproj", "{E4D6B21D-A73E-429A-ACC0-94CCC40039A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Feed", "..\src\TweetSpot.Feed\TweetSpot.Feed.csproj", "{E4D6B21D-A73E-429A-ACC0-94CCC40039A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Feed.Services", "..\src\TweetSpot.Feed.Services\TweetSpot.Feed.Services.csproj", "{2B53D051-178E-471B-8A94-02B6336FD408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Feed.Services", "..\src\TweetSpot.Feed.Services\TweetSpot.Feed.Services.csproj", "{2B53D051-178E-471B-8A94-02B6336FD408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Primatives", "..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj", "{BD44383B-6DF7-410F-A1A0-764F99CBFC09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Primatives", "..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj", "{BD44383B-6DF7-410F-A1A0-764F99CBFC09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Processing", "..\src\TweetSpot.Processing\TweetSpot.Processing.csproj", "{D909BD35-1C40-4B22-8662-1452041648E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Processing", "..\src\TweetSpot.Processing\TweetSpot.Processing.csproj", "{D909BD35-1C40-4B22-8662-1452041648E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Processing.Services", "..\src\TweetSpot.Processing.Services\TweetSpot.Processing.Services.csproj", "{AF12DFAF-5E22-46AD-8979-224F029C65CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Processing.Services", "..\src\TweetSpot.Processing.Services\TweetSpot.Processing.Services.csproj", "{AF12DFAF-5E22-46AD-8979-224F029C65CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Feed.Services.xunit", "..\tests\TweetSpot.Feed.Services.xunit\TweetSpot.Feed.Services.xunit.csproj", "{CE91C95B-61E1-4E64-9189-715F86304A61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Feed.Services.xunit", "..\tests\TweetSpot.Feed.Services.xunit\TweetSpot.Feed.Services.xunit.csproj", "{CE91C95B-61E1-4E64-9189-715F86304A61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Primatives.xunit", "..\tests\TweetSpot.Primatives.xunit\TweetSpot.Primatives.xunit.csproj", "{71035B3C-BC17-4B8B-91DC-9B348D40FE85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Primatives.xunit", "..\tests\TweetSpot.Primatives.xunit\TweetSpot.Primatives.xunit.csproj", "{71035B3C-BC17-4B8B-91DC-9B348D40FE85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.Processing.Services.xunit", "..\tests\TweetSpot.Processing.Services.xunit\TweetSpot.Processing.Services.xunit.csproj", "{9EFDF91A-3596-40E0-8967-CBF04DC6BB8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Processing.Services.xunit", "..\tests\TweetSpot.Processing.Services.xunit\TweetSpot.Processing.Services.xunit.csproj", "{9EFDF91A-3596-40E0-8967-CBF04DC6BB8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TweetSpot.AllInOne", "..\src\TweetSpot.AllInOne\TweetSpot.AllInOne.csproj", "{0C13A3C8-72CB-4C6A-8546-A73CA9673847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.AllInOne", "..\src\TweetSpot.AllInOne\TweetSpot.AllInOne.csproj", "{0C13A3C8-72CB-4C6A-8546-A73CA9673847}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Persistence.EF", "..\src\TweetSpot.Persistence.EF\TweetSpot.Persistence.EF.csproj", "{5CACE98B-8508-42BF-8BBE-B2271FC17351}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TweetSpot.Persistence.EF.xunit", "..\tests\TweetSpot.Persistence.EF.xunit\TweetSpot.Persistence.EF.xunit.csproj", "{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,9 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E4D6B21D-A73E-429A-ACC0-94CCC40039A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -142,5 +143,35 @@ Global
 		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|x64.Build.0 = Release|Any CPU
 		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|x86.ActiveCfg = Release|Any CPU
 		{0C13A3C8-72CB-4C6A-8546-A73CA9673847}.Release|x86.Build.0 = Release|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Debug|x64.Build.0 = Debug|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Debug|x86.Build.0 = Debug|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Release|x64.ActiveCfg = Release|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Release|x64.Build.0 = Release|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Release|x86.ActiveCfg = Release|Any CPU
+		{5CACE98B-8508-42BF-8BBE-B2271FC17351}.Release|x86.Build.0 = Release|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Debug|x64.Build.0 = Debug|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Debug|x86.Build.0 = Debug|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Release|x64.ActiveCfg = Release|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Release|x64.Build.0 = Release|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{6EB22C6B-F128-4B3B-98A4-F029BA8473FD}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F8A2FF1-4D5B-4918-847C-A64CA40F14F7}
 	EndGlobalSection
 EndGlobal

@@ -10,4 +10,8 @@
     <PackageReference Include="MassTransit.AspNetCore" Version="7.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+
 </Project>

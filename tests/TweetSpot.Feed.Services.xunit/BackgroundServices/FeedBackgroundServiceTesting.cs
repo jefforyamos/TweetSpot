@@ -102,6 +102,19 @@ namespace TweetSpot.BackgroundServices
             return Task.FromResult(memoryStream as Stream);
         }
 
+        [Fact]
+        public async Task FakeStream_FromFile_IsValid()
+        {
+            await using var stream = await GetFakeStreamOfData();
+            var reader = new StreamReader(stream);
+            string? line;
+            while ( (line = await reader.ReadLineAsync() ) != null)
+            {
+                var tweet = IncomingTweet.Create(line, DateTime.UtcNow, 0);
+                Assert.NotNull(tweet);
+            }
+        }
+
 
         [Fact]
         public async Task InternalReadFromTwitterAsync_Normal_NoErrors()

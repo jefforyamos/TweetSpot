@@ -1,18 +1,19 @@
 # TweetSpot - A Twitter Processing Feed Architecture Example
 
-This is a solution to demonstrate one possible enterprise architecture.  As an example, it processes incoming Twitter tweets.  It does so in a way that's maintainable and horizontally scalable.  It uses *tweets* to find the *sweet spot* in the tradeoffs in architecture, this the name *TweetSpot*.
+Hey, let's use Twitter *tweets* as a use case to discover and prove the *sweet spot* in architecture, hence the name *TweetSpot*.
 
-My overall philosophy can be attributed to a statement I once read in the introduction of a book years ago that stuck with me:
+This is a solution to demonstrate one possible enterprise architecture.  It does so in a way that's maintainable and horizontally scalable.  My overall philosophy can be attributed to a statement I once read in the introduction of a book years ago that stuck with me:
 
 > Lofty heights are oft achived, while standing on the shoulders of giants.
 
 It is my intention to use this project as an ongoing workplace and eventually a showcase of good architecture and good practices.  To a large degree, I stand on the shoulders of giants that preceeded me establishing design methodology, and giants that produced enterprise tools I can effectively leverage.
 
 Inspiration for this implementation includes the folowing:
- - [SOLID](https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/) design principles.
- - [Roy Oserove naming standards](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) for naming of unit tests.
- - [Event Sourcing and DDD](https://www.youtube.com/watch?v=-iuMjjKQnhg) presentation by Udi Dahan.
- - [CQRS - Command Query Responsibility Segregation](https://martinfowler.com/bliki/CQRS.html) by Martin Fowler.
+
+- [SOLID](https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/) design principles.
+- [Roy Oserove naming standards](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html) for naming of unit tests.
+- [Event Sourcing and DDD](https://www.youtube.com/watch?v=-iuMjjKQnhg) presentation by Udi Dahan, or anything else by Udi Dahan.
+- [CQRS - Command Query Responsibility Segregation](https://martinfowler.com/bliki/CQRS.html) by Martin Fowler.
 
 ## Tools Used in Implementation
 
@@ -29,17 +30,17 @@ The tools and technologies employed in this technology are as follows:
 
 All assemblies in this application suite are rooted in the same namespace.  The namespaces below should be understood to be prefixed with "TweetSpot.".
 
-| Namespace                        | Purpose |
-| -------------------------------- | ------- |
-| BackgroundServices               | Processing services.  Any service that subclasses from BackGroundService or otherwise implements IHostedService. |
-| Models                           | Data containers.  |
-| ServiceBus.Commands              | Service bus interfaces intended to be implemented as CQRS commands.  They should be named as present tense verbs. |
-| ServiceBus.Events                | Service bus interfaces intended to be CQRS events.  They should be named as past tense verbs. |
-| ServiceBus.Consumers             | Handlers that implement the IConsumer\<T\> interface to respond to service bus commands or events. |
-| Exceptions                       | Any exception types that are unique to this system. |
-| Net | Any implementations that extend or act as containers for classes in the System.Net namespaces.
-| Delegates | Any delegates that are used as types in various interfaces. |
-| Extensions | Extension method classes.  Although the folder is located here, the namespace should be modified to match that of the class being extended. |
+| Namespace            | Purpose                                                                                                                                     |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| BackgroundServices   | Processing services.  Any service that subclasses from BackGroundService or otherwise implements IHostedService.                            |
+| Models               | Data containers.                                                                                                                            |
+| ServiceBus.Commands  | Service bus interfaces intended to be implemented as CQRS commands.  They should be named as present tense verbs.                           |
+| ServiceBus.Events    | Service bus interfaces intended to be CQRS events.  They should be named as past tense verbs.                                               |
+| ServiceBus.Consumers | Handlers that implement the IConsumer\<T\> interface to respond to service bus commands or events.                                          |
+| Exceptions           | Any exception types that are unique to this system.                                                                                         |
+| Net                  | Any implementations that extend or act as containers for classes in the System.Net namespaces.                                              |
+| Delegates            | Any delegates that are used as types in various interfaces.                                                                                 |
+| Extensions           | Extension method classes.  Although the folder is located here, the namespace should be modified to match that of the class being extended. |
 
 
 ## Guidelines for Assembly Types
