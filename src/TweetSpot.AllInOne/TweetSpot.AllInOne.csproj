@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TweetSpot.Feed.Services\TweetSpot.Feed.Services.csproj" />
+    <ProjectReference Include="..\TweetSpot.Persistence.InMemory\TweetSpot.Persistence.InMemory.csproj" />
     <ProjectReference Include="..\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
     <ProjectReference Include="..\TweetSpot.Processing.Services\TweetSpot.Processing.Services.csproj" />
   </ItemGroup>

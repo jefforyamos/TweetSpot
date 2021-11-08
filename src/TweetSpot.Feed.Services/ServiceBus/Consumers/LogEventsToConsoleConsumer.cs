@@ -6,7 +6,9 @@ using TweetSpot.ServiceBus.Events;
 
 namespace TweetSpot.ServiceBus.Consumers
 {
-    public class LogEventsToConsoleConsumer : IConsumer<ITwitterFeedInitStarted>, IConsumer<IFeedSpeedReported>
+    public class LogEventsToConsoleConsumer : IConsumer<ITwitterFeedInitStarted>, 
+            IConsumer<IFeedSpeedReported>, 
+            IConsumer<ICryptoTweetReceived>
     {
         private readonly ILogger<LogEventsToConsoleConsumer> _logger;
 
@@ -23,6 +25,13 @@ namespace TweetSpot.ServiceBus.Consumers
         public Task Consume(ConsumeContext<IFeedSpeedReported> speedReport)
         {
             _logger.LogInformation($"Current speed: {speedReport.Message.CurrentSpeedTweetsPerSecond:N1}/sec.  Average: {speedReport.Message.AverageSpeedTweetsPerSecond:N1}");
+            return Task.CompletedTask;
+        }
+
+        public Task Consume(ConsumeContext<ICryptoTweetReceived> context)
+        {
+            var formattedKeywordList = string.Join(",", context.Message.KeywordsDetected);
+            _logger.LogInformation($"Crypto Tweet [{formattedKeywordList}] - {context.Message.UnparsedData}");
             return Task.CompletedTask;
         }
     }

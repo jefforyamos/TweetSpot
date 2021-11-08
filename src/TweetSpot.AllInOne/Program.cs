@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using TweetSpot.BackgroundServices;
 using TweetSpot.Models;
 using TweetSpot.Net;
+using TweetSpot.Persistence;
+using TweetSpot.Persistence.InMemory;
 using TweetSpot.ServiceBus.Consumers;
 
 namespace TweetSpot.AllInOne
@@ -37,6 +39,7 @@ namespace TweetSpot.AllInOne
                     {
                         x.AddConsumer<LogEventsToConsoleConsumer>(); // To show us what's going on
                         x.AddConsumer<ProcessIncomingTweetConsumer>();
+                        x.AddConsumer<CryptoTweetDetector>();
                         x.UsingInMemory((context, cfg) =>
                         {
                             cfg.ConfigureEndpoints(context);
@@ -46,6 +49,7 @@ namespace TweetSpot.AllInOne
                     services.AddTransient<IHttpClient, HttpClientContainer>(); // Must be Transient to get a new instance each time
                     services.AddSingleton<ITwitterFeedConfiguration, TwitterFeedConfiguration>();
                     services.AddHostedService<FeedBackgroundService>();
+                    services.AddSingleton<ICryptoKeywordPersistence, CryptoKeywordPersistenceInMemory>();
 
                 });
     }

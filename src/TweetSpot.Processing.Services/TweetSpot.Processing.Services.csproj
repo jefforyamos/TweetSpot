@@ -10,4 +10,8 @@
     <PackageReference Include="MassTransit.AspNetCore" Version="7.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
+  </ItemGroup>
+
 </Project>

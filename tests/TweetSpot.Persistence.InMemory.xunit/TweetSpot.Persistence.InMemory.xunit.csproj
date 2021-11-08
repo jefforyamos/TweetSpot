@@ -5,13 +5,13 @@
 
     <IsPackable>false</IsPackable>
 
-    <RootNamespace>TweetSpot.Persistence.EF</RootNamespace>
+    <AssemblyName>TweetSpot.Persistence.InMemory.xunit</AssemblyName>
+
+    <RootNamespace>TweetSpot.Persistence.InMemory</RootNamespace>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TweetSpot.Persistence.EF\TweetSpot.Persistence.EF.csproj" />
+    <ProjectReference Include="..\..\src\TweetSpot.Persistence.InMemory\TweetSpot.Persistence.InMemory.csproj" />
     <ProjectReference Include="..\..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
   </ItemGroup>
 
