@@ -34,4 +34,8 @@
     <ProjectReference Include="..\..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ServiceBus\Events\" />
+  </ItemGroup>
+
 </Project>

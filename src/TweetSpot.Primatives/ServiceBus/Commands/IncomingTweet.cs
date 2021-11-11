@@ -4,6 +4,9 @@ using System.Diagnostics;
 
 namespace TweetSpot.ServiceBus.Commands
 {
+    /// <summary>
+    /// Actual implementation of the command-verb that is instanced in the Feed.
+    /// </summary>
     [Table("Tweets")]
     public class IncomingTweet : IProcessIncomingTweet
     {

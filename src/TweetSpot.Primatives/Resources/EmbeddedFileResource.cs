@@ -24,11 +24,11 @@ namespace TweetSpot.Resources
         /// Open the file resource as a readable stream throwing an exception if not found.
         /// </summary>
         /// <returns>Readable stream.</returns>
-        /// <exception cref="InvalidOperationException">If the file contents cannot be located in the assembly.</exception>
+        /// <exception cref="FileNotFoundException">If the file contents cannot be located in the assembly.</exception>
         public Stream OpenReadStream()
         {
             return _assemblyContainingResource.GetManifestResourceStream(_filePath)
-                   ?? throw new InvalidOperationException($"Unable to find resource {_assemblyContainingResource.GetName().Name}.{_filePath}");
+                   ?? throw new FileNotFoundException($"Unable to find resource {_filePath} in assembly {_assemblyContainingResource.GetName().Name}.");
         }
     }
 }

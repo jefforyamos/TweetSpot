@@ -19,7 +19,7 @@ namespace TweetSpot.Resources
         [Fact]
         public void ReadStream_ResourceThatDoesNotExist_ThrowsException()
         {
-            Assert.Throws<InvalidOperationException>(() =>
+            Assert.Throws<FileNotFoundException>(() =>
             {
                 new EmbeddedFileResource(GetType(), "This.File.Does.Not.Exist").OpenReadStream();
             });
