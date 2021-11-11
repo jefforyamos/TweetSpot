@@ -9,7 +9,7 @@ namespace TweetSpot.Persistence.InMemory
         {
             var svc = new CryptoKeywordPersistenceInMemory();
             var keywords = svc.GetKeywords();
-            Assert.Contains("$BTC", keywords);
+            Assert.Contains("#BTC", keywords);
         }
 
         [Theory]

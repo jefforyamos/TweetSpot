@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TweetSpot.Persistence.InMemory.Resources;
 
 namespace TweetSpot.Persistence.InMemory
 {
@@ -13,10 +15,12 @@ namespace TweetSpot.Persistence.InMemory
 
         private IEnumerable<string> GetKeywordsFromResourceFile()
         {
-            using var memoryStream = new MemoryStream(Properties.Resources.CryptoKeywords);
-            using var streamReader = new StreamReader(memoryStream);
+            using var stream = LocalEmbeddedResources.CryptoKeywords.OpenReadStream();
+            if (stream == null) throw new InvalidOperationException("Embedded resource not found.");
+            using var streamReader = new StreamReader(stream);
             string? line = null;
             while ((line = streamReader.ReadLine()) != null) yield return line;
         }
+
     }
 }
