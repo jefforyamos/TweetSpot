@@ -1,4 +1,3 @@
-using System;
 using TweetSpot.Models;
 
 namespace TweetSpot.ServiceBus.Commands

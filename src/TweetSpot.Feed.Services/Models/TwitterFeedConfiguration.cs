@@ -53,8 +53,8 @@ namespace TweetSpot.Models
         public int? StreamBufferSize => 10 * 1_024;
         public void DemandEssentialSettings()
         {
-            if( string.IsNullOrWhiteSpace(_configuration[TwitterBearerTokenKey]))
-                throw new EnvironmentConfigurationException(TwitterBearerTokenKey,"Twitter feed cannot be started without a bearer token provided by Twitter.");
+            if (string.IsNullOrWhiteSpace(_configuration[TwitterBearerTokenKey]))
+                throw new EnvironmentConfigurationException(TwitterBearerTokenKey, "Twitter feed cannot be started without a bearer token provided by Twitter.");
         }
     }
 }

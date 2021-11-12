@@ -8,7 +8,7 @@ namespace TweetSpot.Exceptions
     [Serializable]
     public class EnvironmentConfigurationException : ApplicationException
     {
-        
+
         public EnvironmentConfigurationException(string environmentVariableName, string description)
             : base($"Environment variable '{environmentVariableName}' not set.  {description}.")
         {

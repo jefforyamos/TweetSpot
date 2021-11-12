@@ -1,7 +1,7 @@
-using TweetSpot.ServiceBus.Commands;
 using MassTransit;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
+using TweetSpot.ServiceBus.Commands;
 
 namespace TweetSpot.ServiceBus.Consumers
 {

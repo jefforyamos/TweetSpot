@@ -1,13 +1,12 @@
-﻿using System.Formats.Asn1;
-using System.Threading.Tasks;
-using MassTransit;
+﻿using MassTransit;
 using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 using TweetSpot.ServiceBus.Events;
 
 namespace TweetSpot.ServiceBus.Consumers
 {
-    public class LogEventsToConsoleConsumer : IConsumer<ITwitterFeedInitStarted>, 
-            IConsumer<IFeedSpeedReported>, 
+    public class LogEventsToConsoleConsumer : IConsumer<ITwitterFeedInitStarted>,
+            IConsumer<IFeedSpeedReported>,
             IConsumer<ICryptoTweetReceived>
     {
         private readonly ILogger<LogEventsToConsoleConsumer> _logger;

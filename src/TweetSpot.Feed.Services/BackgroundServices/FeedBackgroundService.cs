@@ -1,14 +1,13 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using MassTransit;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
-using MassTransit;
-using Microsoft.Extensions.DependencyInjection;
 using TweetSpot.Delegates;
 using TweetSpot.Models;
 using TweetSpot.Net;

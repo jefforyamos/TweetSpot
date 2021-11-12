@@ -22,7 +22,7 @@ namespace TweetSpot.ServiceBus.Consumers
         private Mock<ConsumeContext<IProcessIncomingTweet>>? _contextOfEventConsumed;
         private Mock<IProcessIncomingTweet>? _tweetMock;
         private Mock<ICryptoKeywordPersistence>? _persistenceMock;
-        private string[] _standardKeywords = new [] { "One", "Two", "Three" };
+        private string[] _standardKeywords = new[] { "One", "Two", "Three" };
 
         private async Task DoSetup(bool publishExpected, string tweetContent, string[] keyWords)
         {

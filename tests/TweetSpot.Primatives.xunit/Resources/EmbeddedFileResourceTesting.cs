@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Xunit;
 
 namespace TweetSpot.Resources
@@ -9,7 +8,7 @@ namespace TweetSpot.Resources
         [Fact]
         public void ReadStream_Normal_NoExceptions()
         {
-            var resource = new EmbeddedFileResource(GetType(),"HelloWorld.txt");
+            var resource = new EmbeddedFileResource(GetType(), "HelloWorld.txt");
             using var stream = resource.OpenReadStream();
             using var reader = new StreamReader(stream);
             var contents = reader.ReadToEnd();

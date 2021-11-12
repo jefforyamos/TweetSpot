@@ -11,7 +11,7 @@ namespace TweetSpot.Persistence.InMemory
         private string[]? _cache;
         public string[] GetKeywords()
         {
-            return _cache ?? ( _cache = GetKeywordsFromResourceFile().Where( w => !string.IsNullOrWhiteSpace(w)).ToArray() );
+            return _cache ?? (_cache = GetKeywordsFromResourceFile().Where(w => !string.IsNullOrWhiteSpace(w)).ToArray());
         }
 
         private IEnumerable<string> GetKeywordsFromResourceFile()

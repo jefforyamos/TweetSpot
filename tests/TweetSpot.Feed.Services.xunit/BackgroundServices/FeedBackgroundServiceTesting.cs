@@ -1,14 +1,11 @@
-﻿using System;
-using System.IO;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using MassTransit;
-using Microsoft.Extensions.DependencyInjection;
+﻿using MassTransit;
 using Microsoft.Extensions.Logging;
 using Moq;
+using System;
+using System.IO;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
 using TweetSpot.Models;
 using TweetSpot.Net;
 using TweetSpot.Resources;
@@ -64,7 +61,7 @@ namespace TweetSpot.BackgroundServices
             service.Setup(s => s.SafeExecuteAsync(cancelToken)).CallBase();
             service.Setup(s => s.InternalReadFromTwitterAsync(cancelToken)).Callback(() =>
             {
-                if( ++cycleCount >= maxCycles) _cancellationTokenSource.Cancel();
+                if (++cycleCount >= maxCycles) _cancellationTokenSource.Cancel();
                 _output.WriteLine($"Callback {cycleCount}");
             });
             await service.Object.SafeExecuteAsync(cancelToken);
@@ -86,10 +83,10 @@ namespace TweetSpot.BackgroundServices
                 _cancellationTokenSource.Cancel();
                 throw expectedException;
             });
-            _logger.Setup(l => l.Log(LogLevel.Error, 
-                It.IsAny<EventId>(), 
-                It.IsAny<object>(), 
-                expectedException, 
+            _logger.Setup(l => l.Log(LogLevel.Error,
+                It.IsAny<EventId>(),
+                It.IsAny<object>(),
+                expectedException,
                 It.IsAny<Func<object, Exception, string>>()));
             await service.Object.SafeExecuteAsync(cancelToken);
             _logger.Verify();
@@ -109,7 +106,7 @@ namespace TweetSpot.BackgroundServices
             await using var stream = await GlobalTestResources.TweetStreamSmall1.OpenReadStreamAsync();
             var reader = new StreamReader(stream);
             string? line;
-            while ( (line = await reader.ReadLineAsync() ) != null)
+            while ((line = await reader.ReadLineAsync()) != null)
             {
                 var tweet = IncomingTweet.Create(line, DateTime.UtcNow, 0);
                 Assert.NotNull(tweet);

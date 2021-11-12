@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using TweetSpot.ServiceBus.Commands;
-using System.Threading;
 using System.Runtime.CompilerServices;
+using System.Threading;
+using TweetSpot.ServiceBus.Commands;
 
 namespace TweetSpot.Resources
 {
@@ -18,7 +14,7 @@ namespace TweetSpot.Resources
         public TwitterFeedEmbeddedFileResource(Type classProvidingNamespaceAndAssembly, string relativePath)
             : base(classProvidingNamespaceAndAssembly, relativePath)
         {
-          
+
         }
 
         public IEnumerable<IncomingTweet> GetIncomingTweets()
@@ -26,10 +22,10 @@ namespace TweetSpot.Resources
             using var reader = GetReader();
             string? inputLine;
             ulong ordinalCount = 0;
-            while( (inputLine = reader.ReadLine()) != null )
+            while ((inputLine = reader.ReadLine()) != null)
             {
                 var tweet = IncomingTweet.Create(inputLine, DateTime.UtcNow, ordinalCount);
-                if( tweet != null)
+                if (tweet != null)
                 {
                     yield return tweet;
                     ordinalCount++;
@@ -42,7 +38,7 @@ namespace TweetSpot.Resources
             using var reader = GetReader();
             string? inputLine;
             ulong ordinalCount = 0;
-            while( (inputLine = await reader.ReadLineAsync()) != null )
+            while ((inputLine = await reader.ReadLineAsync()) != null)
             {
                 var tweet = IncomingTweet.Create(inputLine, DateTime.UtcNow, ordinalCount);
                 if (tweet != null)
@@ -53,6 +49,6 @@ namespace TweetSpot.Resources
                 if (cancellationToken.IsCancellationRequested) break;
             }
         }
-  
+
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace TweetSpot.Persistence
+﻿namespace TweetSpot.Persistence
 {
     /// <summary>
     /// Defines the persistence needed to maintain keywords used to determine inclusion of tweets considered to be "about crypto".

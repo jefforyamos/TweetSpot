@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Moq;
 using Xunit;
 using Xunit.Abstractions;
@@ -26,7 +25,7 @@ namespace TweetSpot.Models
             config.Setup(c => c.TwitterBearerToken).Returns(bearerTokenValue);
             config.Setup(c => c.TwitterBearerTokenAbbreviation).CallBase();
             var result = config.Object.TwitterBearerTokenAbbreviation;
-            Assert.Equal(expectedResult, result );
+            Assert.Equal(expectedResult, result);
         }
 
         [Fact]

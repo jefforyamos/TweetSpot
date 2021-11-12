@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using TweetSpot.Models;
+﻿using TweetSpot.Models;
 
 namespace TweetSpot.ServiceBus.Events
 {
