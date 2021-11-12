@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Moq;
 using TweetSpot.Models;
 using TweetSpot.Net;
+using TweetSpot.Resources;
 using TweetSpot.ServiceBus.Commands;
 using TweetSpot.ServiceBus.Events;
 using Xunit;
@@ -94,18 +95,18 @@ namespace TweetSpot.BackgroundServices
             _logger.Verify();
         }
 
-        private Task<Stream> GetFakeStreamOfData()
-        {
-            var enc = Encoding.UTF8;
-            var buffer = enc.GetBytes(Properties.Resources.TweetStreamSmall_1);
-            var memoryStream = new MemoryStream(buffer);
-            return Task.FromResult(memoryStream as Stream);
-        }
+        //private Task<Stream> GetFakeStreamOfData()
+        //{
+        //    var enc = Encoding.UTF8;
+        //    var buffer = enc.GetBytes(Properties.Resources.TweetStreamSmall_1);
+        //    var memoryStream = new MemoryStream(buffer);
+        //    return Task.FromResult(memoryStream as Stream);
+        //}
 
         [Fact]
         public async Task FakeStream_FromFile_IsValid()
         {
-            await using var stream = await GetFakeStreamOfData();
+            await using var stream = await GlobalTestResources.TweetStreamSmall1.OpenReadStreamAsync();
             var reader = new StreamReader(stream);
             string? line;
             while ( (line = await reader.ReadLineAsync() ) != null)
@@ -121,7 +122,7 @@ namespace TweetSpot.BackgroundServices
         {
             Init();
             var cancelToken = _cancellationTokenSource.Token;
-            _httpClient.Setup(c => c.GetStreamAsync(It.IsAny<Uri>(), cancelToken)).Returns(GetFakeStreamOfData());
+            _httpClient.Setup(c => c.GetStreamAsync(It.IsAny<Uri>(), cancelToken)).Returns(GlobalTestResources.TweetStreamSmall1.OpenReadStreamAsync());
             _bus = new Mock<IBus>(MockBehavior.Strict);
             _bus.Setup(b => b.Publish<ITwitterFeedInitStarted>(It.IsAny<object>(), cancelToken));
             //for (var x = 0; x < 5; x++)

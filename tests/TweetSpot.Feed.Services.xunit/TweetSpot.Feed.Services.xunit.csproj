@@ -31,14 +31,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\TweetSpot.Feed.Services\TweetSpot.Feed.Services.csproj" />
     <ProjectReference Include="..\..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <ProjectReference Include="..\TweetSpot.Primatives.xunit\TweetSpot.Primatives.xunit.csproj" />
   </ItemGroup>
 
   <ItemGroup>

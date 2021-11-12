@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <None Remove="Resources\HelloWorld.txt" />
+    <None Remove="Resources\TweetStreamSmall_1.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\HelloWorld.txt" />
+    <EmbeddedResource Include="Resources\TweetStreamSmall_1.txt" />
   </ItemGroup>
 
   <ItemGroup>

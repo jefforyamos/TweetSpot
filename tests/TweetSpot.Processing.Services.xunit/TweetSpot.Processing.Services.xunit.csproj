@@ -26,6 +26,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\TweetSpot.Primatives\TweetSpot.Primatives.csproj" />
     <ProjectReference Include="..\..\src\TweetSpot.Processing.Services\TweetSpot.Processing.Services.csproj" />
+    <ProjectReference Include="..\TweetSpot.Primatives.xunit\TweetSpot.Primatives.xunit.csproj" />
   </ItemGroup>
 
 </Project>

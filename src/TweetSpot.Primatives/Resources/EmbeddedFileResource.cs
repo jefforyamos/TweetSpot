@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace TweetSpot.Resources
 {
@@ -29,6 +30,16 @@ namespace TweetSpot.Resources
         {
             return _assemblyContainingResource.GetManifestResourceStream(_filePath)
                    ?? throw new FileNotFoundException($"Unable to find resource {_filePath} in assembly {_assemblyContainingResource.GetName().Name}.");
+        }
+
+        public Task<Stream> OpenReadStreamAsync()
+        {
+            return Task<Stream>.FromResult(OpenReadStream());
+        }
+
+        public TextReader GetReader()
+        {
+            return new StreamReader(OpenReadStream());
         }
     }
 }
