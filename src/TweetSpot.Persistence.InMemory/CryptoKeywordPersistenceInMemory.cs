@@ -8,9 +8,10 @@ namespace TweetSpot.Persistence.InMemory
 {
     public class CryptoKeywordPersistenceInMemory : ICryptoKeywordPersistence
     {
+        private string[]? _cache;
         public string[] GetKeywords()
         {
-            return GetKeywordsFromResourceFile().Where( w => !string.IsNullOrWhiteSpace(w)).ToArray();
+            return _cache ?? ( _cache = GetKeywordsFromResourceFile().Where( w => !string.IsNullOrWhiteSpace(w)).ToArray() );
         }
 
         private IEnumerable<string> GetKeywordsFromResourceFile()

@@ -21,12 +21,13 @@ namespace TweetSpot.ServiceBus.Consumers
         private ICryptoTweetReceived? _eventThatWasPublishedToTheBus;
         private Mock<ConsumeContext<IProcessIncomingTweet>>? _contextOfEventConsumed;
         private Mock<IProcessIncomingTweet>? _tweetMock;
+        private Mock<ICryptoKeywordPersistence>? _persistenceMock;
         private string[] _standardKeywords = new [] { "One", "Two", "Three" };
 
         private async Task DoSetup(bool publishExpected, string tweetContent, string[] keyWords)
         {
-            var persistenceMock = new Mock<ICryptoKeywordPersistence>();
-            persistenceMock.Setup(p => p.GetKeywords()).Returns(keyWords);
+            _persistenceMock = new Mock<ICryptoKeywordPersistence>();
+            _persistenceMock.Setup(p => p.GetKeywords()).Returns(keyWords);
             _tweetMock = new Mock<IProcessIncomingTweet>();
             _tweetMock.Setup(tweet => tweet.UnparsedData).Returns(tweetContent);
             _tweetMock.Setup(tweet => tweet.Id).Returns(12345);
@@ -39,7 +40,7 @@ namespace TweetSpot.ServiceBus.Consumers
             {
                 _busMock.Setup(bus => bus.Publish<ICryptoTweetReceived>(It.IsAny<ICryptoTweetReceived>(), It.IsAny<CancellationToken>()));
             }
-            _serviceBeingTested = new CryptoTweetDetector(_busMock.Object, persistenceMock.Object);
+            _serviceBeingTested = new CryptoTweetDetector(_busMock.Object, _persistenceMock.Object);
             Assert.NotNull(_contextOfEventConsumed?.Object);
             await _serviceBeingTested.Consume(_contextOfEventConsumed.Object);
             _eventThatWasPublishedToTheBus = _busMock.Invocations.Count > 0
@@ -98,6 +99,18 @@ namespace TweetSpot.ServiceBus.Consumers
         {
             await DoSetup(true, "three is a match", _standardKeywords);
             Assert.Equal(_tweetMock.Object.ReceivedDateTimeUtc, _eventThatWasPublishedToTheBus.ReceivedDateTimeUtc);
+        }
+
+        [Fact]
+        public async Task GetKeywordsFromTweet_Standard_ObtainsActiveKeywordsFromPersistence()
+        {
+            // 
+            // Since we may want to change keywords real-time and have this service respond immediately, 
+            // we get the list of keywords from persistence every time we process a tweet.
+            // The persistence implementation may decide to cache it.
+            //
+            await DoSetup(true, "three is a match", _standardKeywords);
+            _persistenceMock.VerifyAll();
         }
     }
 }
