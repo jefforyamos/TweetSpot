@@ -27,7 +27,7 @@ namespace TweetSpot.Persistence.EF
 
         public DbConnection Connection { get; private set; }
 
-        public TweetSpotDbContext CreateContext(DbTransaction transaction = null)
+        public TweetSpotDbContext CreateContext(DbTransaction? transaction = null)
         {
             var context = new TweetSpotDbContext(new DbContextOptionsBuilder<TweetSpotDbContext>()
                 .UseSqlite(Connection)
