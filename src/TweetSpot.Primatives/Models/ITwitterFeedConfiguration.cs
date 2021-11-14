@@ -1,5 +1,4 @@
 ﻿using System;
-using TweetSpot.BackgroundServices;
 using TweetSpot.Exceptions;
 
 namespace TweetSpot.Models
@@ -14,23 +13,7 @@ namespace TweetSpot.Models
         /// </summary>
         string TwitterBearerToken { get; }
 
-        /// <summary>
-        /// Returns a displayable version of the bearer token to confirm the value being used without disclosing the value in it's entirety.
-        /// </summary>
-        string TwitterBearerTokenAbbreviation
-        {
-            get
-            {
-                const int minimumLength = 10;
-                var token = TwitterBearerToken;
-                var length = token?.Length ?? 0;
-                if (length < minimumLength) return "<BAD TOKEN>";
-                var beginSegment = token?.Substring(0, 3) ?? string.Empty;
-                var endSegment = token?.Substring(length - 3, 3) ?? string.Empty;
-                return $"{beginSegment}...{endSegment}";
-            }
-        }
-
+  
         /// <summary>
         /// The Uri that should be called by the service
         /// </summary>
@@ -51,10 +34,11 @@ namespace TweetSpot.Models
         /// </summary>
         int? StreamBufferSize { get; }
 
-        /// <summary>
-        /// Examines the configuration throwing a fatal exception identifying missing settings.  To be called at startup.
-        /// </summary>
-        /// <exception cref="EnvironmentConfigurationException">Identifies the name of the first setting that was missing from the environment.</exception>
+    }
+
+    public interface IDemandEssentialSettingsOnStartup
+    {
         void DemandEssentialSettings();
     }
+
 }

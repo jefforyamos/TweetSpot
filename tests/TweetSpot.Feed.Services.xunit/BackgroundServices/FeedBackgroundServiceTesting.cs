@@ -44,7 +44,7 @@ namespace TweetSpot.BackgroundServices
             _logger = new Mock<ILogger<FeedBackgroundService>>();
             _config = new Mock<ITwitterFeedConfiguration>();
             _config.Setup(config => config.TwitterBearerToken).Returns("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-            _config.Setup(config => config.TwitterBearerTokenAbbreviation).CallBase(); // Yes, it's implemented in the interface itself
+            // _config.Setup(config => config.TwitterBearerTokenAbbreviation).CallBase(); // Yes, it's implemented in the interface itself
             _bus = new Mock<IBus>();
             _serviceProvider = new Mock<IServiceProvider>();
             _service = new FeedBackgroundService(_logger.Object, _config.Object, _bus.Object, _serviceProvider.Object);
@@ -125,8 +125,9 @@ namespace TweetSpot.BackgroundServices
             var service = new FeedBackgroundService(_logger.Object, _config.Object, _bus.Object, _serviceProvider.Object);
             await service.InternalReadFromTwitterAsync(cancelToken);
             var startupMessageSentToBus = _bus.Invocations[0].Arguments[0] as ITwitterFeedInitStarted;
-            Assert.NotNull(startupMessageSentToBus?.BearerTokenAbbreviation);
-            Assert.Equal("ABC...XYZ", startupMessageSentToBus.BearerTokenAbbreviation);
+            Assert.Same(_config.Object, startupMessageSentToBus.Configuration);
+            Assert.NotNull(startupMessageSentToBus?.Configuration?.TwitterBearerToken);
+            Assert.Equal("ABC...XYZ", startupMessageSentToBus.Configuration.GetTwitterBearerTokenAbbreviation());
         }
     }
 }

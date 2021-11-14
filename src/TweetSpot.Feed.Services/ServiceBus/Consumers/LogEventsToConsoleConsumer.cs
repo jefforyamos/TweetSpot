@@ -17,7 +17,14 @@ namespace TweetSpot.ServiceBus.Consumers
         }
         public Task Consume(ConsumeContext<ITwitterFeedInitStarted> context)
         {
-            _logger.LogInformation($"TWITTER Feed provider is opening access to feed using token {context.Message.BearerTokenAbbreviation}.");
+            var config = context.Message.Configuration;
+            _logger.LogInformation(@$"TWITTER Feed provider is opening access to feed using the following settings: 
+            Bearer Token: {config.TwitterBearerToken}
+            Client Timeout: {config.ClientTimeout}
+            Speed Report Interval: {config.SpeedReportIntervalCount}
+            Stream Buffer Size: {config.StreamBufferSize:N0}
+            Twitter URI: {config.SampledStreamUri}
+");
             return Task.CompletedTask;
         }
 

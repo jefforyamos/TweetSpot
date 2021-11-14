@@ -4,7 +4,7 @@ using TweetSpot.Exceptions;
 
 namespace TweetSpot.Models
 {
-    public class TwitterFeedConfiguration : ITwitterFeedConfiguration
+    public class TwitterFeedConfiguration : ITwitterFeedConfiguration, IDemandEssentialSettingsOnStartup
     {
         private readonly IConfiguration _configuration;
 
@@ -51,10 +51,12 @@ namespace TweetSpot.Models
         }
 
         public int? StreamBufferSize => 10 * 1_024;
+
         public void DemandEssentialSettings()
         {
             if (string.IsNullOrWhiteSpace(_configuration[TwitterBearerTokenKey]))
                 throw new EnvironmentConfigurationException(TwitterBearerTokenKey, "Twitter feed cannot be started without a bearer token provided by Twitter.");
+
         }
     }
 }

@@ -23,8 +23,7 @@ namespace TweetSpot.Models
         {
             var config = new Mock<ITwitterFeedConfiguration>();
             config.Setup(c => c.TwitterBearerToken).Returns(bearerTokenValue);
-            config.Setup(c => c.TwitterBearerTokenAbbreviation).CallBase();
-            var result = config.Object.TwitterBearerTokenAbbreviation;
+            var result = config.Object.GetTwitterBearerTokenAbbreviation();
             Assert.Equal(expectedResult, result);
         }
 

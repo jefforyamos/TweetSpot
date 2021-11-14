@@ -121,17 +121,20 @@ namespace TweetSpot.BackgroundServices
 
         public override Task StartAsync(CancellationToken cancellationToken)
         {
-            _configuration.DemandEssentialSettings();
+            var demandValidSetup = _configuration as IDemandEssentialSettingsOnStartup;
+            demandValidSetup?.DemandEssentialSettings();
             return base.StartAsync(cancellationToken);
         }
 
+
         private class FeedStartedMessage : ITwitterFeedInitStarted
         {
-            public FeedStartedMessage(ITwitterFeedConfiguration configValues)
+            public FeedStartedMessage(ITwitterFeedConfiguration configuration)
             {
-                BearerTokenAbbreviation = configValues.TwitterBearerTokenAbbreviation;
+                Configuration = configuration;
             }
-            public string BearerTokenAbbreviation { get; }
+
+            public ITwitterFeedConfiguration Configuration { get; }
         }
     }
 }
