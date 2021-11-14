@@ -42,7 +42,10 @@ namespace TweetSpot.BackgroundServices
         }
 
         /// <summary>
-        /// Overridden to retry repeatedly until the service is stopped.
+        /// Calls <see cref="SafeExecuteAsync(CancellationToken)"/>.  Nothing more.
+        /// The reason for the indirection is testing.   Because the method we override is not scoped with internal, 
+        /// we cannot adequatenly make the mocks of the tests do what we need them to.  Therefore, we defer the call to 
+        /// a method that can be mocked.
         /// </summary>
         /// <param name="stoppingToken">The token that tells us when to stop.</param>
         /// <returns>Creates a task that repeatedly attempts to gain connection and pull the feed</returns>
@@ -51,6 +54,11 @@ namespace TweetSpot.BackgroundServices
             await SafeExecuteAsync(stoppingToken);
         }
 
+        /// <summary>
+        /// Does nothing but retry the Twitter feed until time to quit and go home.
+        /// </summary>
+        /// <param name="stoppingToken">The whistle that blows and tells us to shut down.</param>
+        /// <returns></returns>
         internal virtual async Task SafeExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
@@ -59,9 +67,17 @@ namespace TweetSpot.BackgroundServices
                 {
                     await InternalReadFromTwitterAsync(stoppingToken);
                 }
+                // catch block here to detect intentional shutdown catches via OperationCancelledException timeout exceptions from the HTTPClient
                 catch (Exception e)
                 {
-                    _logger.LogError(e, "Exception while reading feed from twitter, restarting feed.");
+                    if( stoppingToken.IsCancellationRequested && e is OperationCanceledException)
+                    {
+                        _logger.LogInformation($"{nameof(FeedBackgroundService)} received notice to shut down.");
+                    }
+                    else
+                    {
+                        _logger.LogError(e, "Exception while reading feed from twitter, restarting feed.");
+                    }
                 }
             }
         }
@@ -74,7 +90,8 @@ namespace TweetSpot.BackgroundServices
         /// <returns>Returns a task that pulls tweets and publishes them to the bus.</returns>
         internal virtual async Task InternalReadFromTwitterAsync(CancellationToken cancelToken)
         {
-            await _bus.Publish<ITwitterFeedInitStarted>(new { BearerTokenAbbreviation = _configuration.TwitterBearerTokenAbbreviation }, cancelToken);
+            var startupMsg = new FeedStartedMessage(_configuration);
+            await _bus.Publish<ITwitterFeedInitStarted>(startupMsg, cancelToken);
             using var client = _serviceProvider.GetService<IHttpClient>() ?? throw new InvalidOperationException($"Bad dependency injection for {nameof(IHttpClient)}");
             client.Timeout = _configuration.ClientTimeout;
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _configuration.TwitterBearerToken);
@@ -106,6 +123,15 @@ namespace TweetSpot.BackgroundServices
         {
             _configuration.DemandEssentialSettings();
             return base.StartAsync(cancellationToken);
+        }
+
+        private class FeedStartedMessage : ITwitterFeedInitStarted
+        {
+            public FeedStartedMessage(ITwitterFeedConfiguration configValues)
+            {
+                BearerTokenAbbreviation = configValues.TwitterBearerTokenAbbreviation;
+            }
+            public string BearerTokenAbbreviation { get; }
         }
     }
 }

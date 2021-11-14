@@ -13,6 +13,11 @@ using TweetSpot.ServiceBus.Commands;
 using TweetSpot.ServiceBus.Events;
 using Xunit;
 using Xunit.Abstractions;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
+
 
 namespace TweetSpot.BackgroundServices
 {
@@ -38,6 +43,8 @@ namespace TweetSpot.BackgroundServices
         {
             _logger = new Mock<ILogger<FeedBackgroundService>>();
             _config = new Mock<ITwitterFeedConfiguration>();
+            _config.Setup(config => config.TwitterBearerToken).Returns("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+            _config.Setup(config => config.TwitterBearerTokenAbbreviation).CallBase(); // Yes, it's implemented in the interface itself
             _bus = new Mock<IBus>();
             _serviceProvider = new Mock<IServiceProvider>();
             _service = new FeedBackgroundService(_logger.Object, _config.Object, _bus.Object, _serviceProvider.Object);
@@ -47,6 +54,7 @@ namespace TweetSpot.BackgroundServices
             var requestHeaders = new HttpClient().DefaultRequestHeaders; // ctor is private, have to borrow this collection from there
             _httpClient.Setup(c => c.DefaultRequestHeaders).Returns(requestHeaders);
         }
+
 
         [Fact]
         public async Task SafeExecuteAsync_Normal_RunsUntilCancelled()
@@ -92,14 +100,6 @@ namespace TweetSpot.BackgroundServices
             _logger.Verify();
         }
 
-        //private Task<Stream> GetFakeStreamOfData()
-        //{
-        //    var enc = Encoding.UTF8;
-        //    var buffer = enc.GetBytes(Properties.Resources.TweetStreamSmall_1);
-        //    var memoryStream = new MemoryStream(buffer);
-        //    return Task.FromResult(memoryStream as Stream);
-        //}
-
         [Fact]
         public async Task FakeStream_FromFile_IsValid()
         {
@@ -115,26 +115,18 @@ namespace TweetSpot.BackgroundServices
 
 
         [Fact]
-        public async Task InternalReadFromTwitterAsync_Normal_NoErrors()
+        public async Task InternalReadFromTwitterAsync_Normal_SendsStartupMessageToBusAnnouncingConfiguration()
         {
             Init();
             var cancelToken = _cancellationTokenSource.Token;
             _httpClient.Setup(c => c.GetStreamAsync(It.IsAny<Uri>(), cancelToken)).Returns(GlobalTestResources.TweetStreamSmall1.OpenReadStreamAsync());
-            _bus = new Mock<IBus>(MockBehavior.Strict);
-            _bus.Setup(b => b.Publish<ITwitterFeedInitStarted>(It.IsAny<object>(), cancelToken));
-            //for (var x = 0; x < 5; x++)
-            //{
-            //    _bus.Setup(b => b.Publish<IProcessIncomingTweet>(It.IsAny<IProcessIncomingTweet>(), cancelToken))
-            //        .Callback(() =>
-            //            {
-            //                _output.WriteLine("Tweet");
-            //            }
-            //            );
-            //}
-
+            // _bus = new Mock<IBus>(MockBehavior.Strict);
+            _bus.Setup(b => b.Publish<ITwitterFeedInitStarted>(It.IsAny<ITwitterFeedInitStarted>(), It.IsAny<CancellationToken>()));
             var service = new FeedBackgroundService(_logger.Object, _config.Object, _bus.Object, _serviceProvider.Object);
             await service.InternalReadFromTwitterAsync(cancelToken);
-            _bus.Verify();
+            var startupMessageSentToBus = _bus.Invocations[0].Arguments[0] as ITwitterFeedInitStarted;
+            Assert.NotNull(startupMessageSentToBus?.BearerTokenAbbreviation);
+            Assert.Equal("ABC...XYZ", startupMessageSentToBus.BearerTokenAbbreviation);
         }
     }
 }
