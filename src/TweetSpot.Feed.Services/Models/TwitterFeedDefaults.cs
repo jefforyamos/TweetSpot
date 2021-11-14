@@ -2,6 +2,9 @@
 
 namespace TweetSpot.Models
 {
+    /// <summary>
+    /// Contains the default values for each field to be used if the value is unspecified in the environment.
+    /// </summary>
     public class TwitterFeedDefaults : ITwitterFeedConfiguration
     {
         internal const string SampledStreamUriDefault = "https://api.twitter.com/2/tweets/sample/stream";
