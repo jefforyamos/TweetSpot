@@ -32,13 +32,8 @@ namespace TweetSpot.Models
         /// <summary>
         /// Size of the buffer to be used to smooth bursts of data from the service.
         /// </summary>
-        int? StreamBufferSize { get; }
+        int StreamBufferSizeInKb { get; }
 
-    }
-
-    public interface IDemandEssentialSettingsOnStartup
-    {
-        void DemandEssentialSettings();
     }
 
 }

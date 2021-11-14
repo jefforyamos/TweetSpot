@@ -96,7 +96,7 @@ namespace TweetSpot.BackgroundServices
             client.Timeout = _configuration.ClientTimeout;
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _configuration.TwitterBearerToken);
             using var streamTask = client.GetStreamAsync(_configuration.SampledStreamUri, cancelToken);
-            await using var bufferedStream = new BufferedStream(await streamTask, _configuration.StreamBufferSize.GetValueOrDefault(DefaultBufferingSize));
+            await using var bufferedStream = new BufferedStream(await streamTask, _configuration.StreamBufferSizeInKb * 0xFF);
             using var streamReader = new StreamReader(bufferedStream);
             _stopWatch.Start();
             while (!streamReader.EndOfStream)

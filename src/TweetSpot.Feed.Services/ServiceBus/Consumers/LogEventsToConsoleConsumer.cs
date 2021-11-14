@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using TweetSpot.ServiceBus.Events;
+using TweetSpot.Models;
 
 namespace TweetSpot.ServiceBus.Consumers
 {
@@ -19,11 +20,11 @@ namespace TweetSpot.ServiceBus.Consumers
         {
             var config = context.Message.Configuration;
             _logger.LogInformation(@$"TWITTER Feed provider is opening access to feed using the following settings: 
-            Bearer Token: {config.TwitterBearerToken}
-            Client Timeout: {config.ClientTimeout}
-            Speed Report Interval: {config.SpeedReportIntervalCount}
-            Stream Buffer Size: {config.StreamBufferSize:N0}
-            Twitter URI: {config.SampledStreamUri}
+            Bearer Token: {config.TwitterBearerToken} ({TwitterFeedConfiguration.EnvironmentConfigKeys.TwitterBearerToken})
+            Client Timeout: {config.ClientTimeout} ({TwitterFeedConfiguration.EnvironmentConfigKeys.TwitterClientTimeout})
+            Speed Report Interval: {config.SpeedReportIntervalCount} ({TwitterFeedConfiguration.EnvironmentConfigKeys.SpeedReportIntervalCount})
+            Stream Buffer Size: {config.StreamBufferSizeInKb:N0} KB ({TwitterFeedConfiguration.EnvironmentConfigKeys.StreamBufferSizeInKb})
+            Twitter URI: {config.SampledStreamUri} (not configurable, no env value)
 ");
             return Task.CompletedTask;
         }

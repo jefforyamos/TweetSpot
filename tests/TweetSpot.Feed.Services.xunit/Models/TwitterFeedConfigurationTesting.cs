@@ -32,7 +32,7 @@ namespace TweetSpot.Models
         {
             const string envValue = "823230492304830";
             var envConfig = new Mock<IConfiguration>();
-            envConfig.Setup(e => e[TwitterFeedConfiguration.TwitterBearerTokenKey]).Returns(envValue);
+            envConfig.Setup(e => e[TwitterFeedConfiguration.EnvironmentConfigKeys.TwitterBearerToken]).Returns(envValue);
             var config = new TwitterFeedConfiguration(envConfig.Object);
             Assert.Equal(envValue, config.TwitterBearerToken);
         }
@@ -42,7 +42,7 @@ namespace TweetSpot.Models
         {
             var envConfig = new Mock<IConfiguration>();
             var config = new TwitterFeedConfiguration(envConfig.Object);
-            Assert.Equal(TwitterFeedConfiguration.ClientTimeoutDefault, config.ClientTimeout);
+            Assert.Equal(TwitterFeedConfiguration.Defaults.ClientTimeout, config.ClientTimeout);
         }
 
         [Theory]
@@ -51,10 +51,51 @@ namespace TweetSpot.Models
         public void ClientTimeout_EnvOverride_ShouldMatchEnv(string envSpecifiedValue, double totalTimeInSeconds)
         {
             var envConfig = new Mock<IConfiguration>();
-            envConfig.Setup(e => e[TwitterFeedConfiguration.TwitterClientTimeoutKey]).Returns(envSpecifiedValue);
+            envConfig.Setup(e => e[TwitterFeedConfiguration.EnvironmentConfigKeys.TwitterClientTimeout]).Returns(envSpecifiedValue);
             var config = new TwitterFeedConfiguration(envConfig.Object);
             _output.WriteLine($"Specifying [{envSpecifiedValue}] in the environment is interpreted as {config.ClientTimeout}, or {config.ClientTimeout.TotalSeconds} seconds.");
             Assert.Equal(totalTimeInSeconds, config.ClientTimeout.TotalSeconds);
+        }
+
+
+        [Fact]
+        public void SpeedReportIntervalCount_EnvIsDefaulted_ShouldMatchDefaultValue()
+        {
+            var envConfig = new Mock<IConfiguration>();
+            var config = new TwitterFeedConfiguration(envConfig.Object);
+            Assert.Equal(TwitterFeedConfiguration.Defaults.SpeedReportIntervalCount, config.SpeedReportIntervalCount);
+        }
+
+        [Theory]
+        [InlineData("300", 300)] 
+        [InlineData("400", 400)] 
+        public void SpeedReportIntervalCount_EnvOverride_ShouldMatchEnv(string envSpecifiedValue, int expectedInterval)
+        {
+            var envConfig = new Mock<IConfiguration>();
+            envConfig.Setup(e => e[TwitterFeedConfiguration.EnvironmentConfigKeys.SpeedReportIntervalCount]).Returns(envSpecifiedValue);
+            var config = new TwitterFeedConfiguration(envConfig.Object);
+            _output.WriteLine(config.SpeedReportIntervalCount.ToString("N0"));
+            Assert.Equal(expectedInterval, config.SpeedReportIntervalCount);
+        }
+
+        [Fact]
+        public void StreamBufferSizeInKb_EnvIsDefaulted_ShouldMatchDefaultValue()
+        {
+            var envConfig = new Mock<IConfiguration>();
+            var config = new TwitterFeedConfiguration(envConfig.Object);
+            Assert.Equal(TwitterFeedConfiguration.Defaults.StreamBufferSizeInKb, config.StreamBufferSizeInKb);
+        }
+
+        [Theory]
+        [InlineData("1", 1)]
+        [InlineData("400", 400)]
+        public void StreamBufferSizeInKb_EnvOverride_ShouldMatchEnv(string envSpecifiedValue, int expectedSize)
+        {
+            var envConfig = new Mock<IConfiguration>();
+            envConfig.Setup(e => e[TwitterFeedConfiguration.EnvironmentConfigKeys.StreamBufferSizeInKb]).Returns(envSpecifiedValue);
+            var config = new TwitterFeedConfiguration(envConfig.Object);
+            _output.WriteLine(config.StreamBufferSizeInKb.ToString("N0"));
+            Assert.Equal(expectedSize, config.StreamBufferSizeInKb);
         }
     }
 }

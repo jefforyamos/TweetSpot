@@ -8,13 +8,16 @@ namespace TweetSpot.Models
     {
         private readonly IConfiguration _configuration;
 
-        // Keys that correlate to environment values
-        internal const string TwitterBearerTokenKey = "TwitterBearerToken";
-        internal const string TwitterClientTimeoutKey = "TwitterClientTimeout";
+        public static class EnvironmentConfigKeys
+        {
+            public const string TwitterBearerToken = nameof(TwitterBearerToken);
+            public const string TwitterClientTimeout = nameof(TwitterClientTimeout);
+            public const string StreamBufferSizeInKb = nameof(StreamBufferSizeInKb);
+            public const string SpeedReportIntervalCount = nameof(SpeedReportIntervalCount);
+        }
 
         // Defaults
-        internal const string SampledStreamUriDefault = "https://api.twitter.com/2/tweets/sample/stream";
-        internal static readonly TimeSpan ClientTimeoutDefault = TimeSpan.FromSeconds(20);
+        public static readonly ITwitterFeedConfiguration Defaults = new TwitterFeedDefaults();
 
         // Max values
         internal static readonly TimeSpan ClientTimeoutMaximumAllowed = TimeSpan.FromMinutes(5);
@@ -22,40 +25,56 @@ namespace TweetSpot.Models
         public TwitterFeedConfiguration(IConfiguration configuration)
         {
             _configuration = configuration;
-            SampledStreamUri = new Uri(SampledStreamUriDefault);
+            SampledStreamUri = Defaults.SampledStreamUri;
+            TwitterBearerToken = _configuration[EnvironmentConfigKeys.TwitterBearerToken] ?? Defaults.TwitterBearerToken;
+            ClientTimeout = DetermineClientTimeout(configuration) ?? Defaults.ClientTimeout;
+            StreamBufferSizeInKb = DetermineStreamBufferSize(configuration) ?? Defaults.StreamBufferSizeInKb;
+            SpeedReportIntervalCount = DetermineSpeedReportIntervalCount(configuration) ?? Defaults.SpeedReportIntervalCount;
         }
 
-        public string TwitterBearerToken
+        internal static TimeSpan? DetermineClientTimeout(IConfiguration configuration)
         {
-            get
+            var configValue = configuration[EnvironmentConfigKeys.TwitterClientTimeout];
+            if (configValue != null && TimeSpan.TryParse(configValue, out var parsedValue))
             {
-                var token = _configuration[TwitterBearerTokenKey];
-                return token;
+                if (parsedValue <= ClientTimeoutMaximumAllowed) return parsedValue;
+                if ( int.TryParse(configValue, out var intResult) ) return TimeSpan.FromSeconds(intResult);
             }
+            return default;
         }
+
+        internal static int? DetermineStreamBufferSize(IConfiguration configuration)
+        {
+            var configValue = configuration[EnvironmentConfigKeys.StreamBufferSizeInKb];
+            if(configValue != null && int.TryParse(configValue, out var intResult) )
+            {
+                return intResult;
+            }
+            return default;
+        }
+
+        internal static int? DetermineSpeedReportIntervalCount(IConfiguration configuration)
+        {
+            var configValue = configuration[EnvironmentConfigKeys.SpeedReportIntervalCount];
+            if (configValue != null && int.TryParse(configValue, out var intResult))
+            {
+                return intResult;
+            }
+            return default;
+        }
+
+        public string TwitterBearerToken { get; }
 
         public Uri SampledStreamUri { get; }
-        public int SpeedReportIntervalCount => 100; // Todo: Get config from environment?
-        public TimeSpan ClientTimeout
-        {
-            get
-            {
-                var configValue = _configuration[TwitterClientTimeoutKey];
-                if (configValue != null && TimeSpan.TryParse(configValue, out var parsedValue))
-                {
-                    if (parsedValue <= ClientTimeoutMaximumAllowed) return parsedValue;
-                    return int.TryParse(configValue, out var intResult) ? TimeSpan.FromSeconds(intResult) : ClientTimeoutDefault;
-                }
-                return ClientTimeoutDefault;
-            }
-        }
+        public int SpeedReportIntervalCount { get; }
+        public TimeSpan ClientTimeout { get; }
 
-        public int? StreamBufferSize => 10 * 1_024;
+        public int StreamBufferSizeInKb { get; }
 
         public void DemandEssentialSettings()
         {
-            if (string.IsNullOrWhiteSpace(_configuration[TwitterBearerTokenKey]))
-                throw new EnvironmentConfigurationException(TwitterBearerTokenKey, "Twitter feed cannot be started without a bearer token provided by Twitter.");
+            if (string.IsNullOrWhiteSpace(TwitterBearerToken))
+                throw new EnvironmentConfigurationException(EnvironmentConfigKeys.TwitterBearerToken, "Twitter feed cannot be started without a bearer token provided by Twitter.");
 
         }
     }
