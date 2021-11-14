@@ -31,7 +31,7 @@ namespace TweetSpot.ServiceBus.Consumers
 
         public Task Consume(ConsumeContext<IFeedSpeedReported> speedReport)
         {
-            _logger.LogInformation($"Current speed: {speedReport.Message.CurrentSpeedTweetsPerSecond:N1}/sec.  Average: {speedReport.Message.AverageSpeedTweetsPerSecond:N1}");
+            _logger.LogInformation($"Current speed: {speedReport.Message.CurrentSpeedTweetsPerSecond:N1}/sec.  Average: {speedReport.Message.AverageSpeedTweetsPerSecond:N1}, processed {speedReport.Message.TweetsReceivedForAllCycles:N0} tweets in {speedReport.Message.TimeSpanForAllCycles}.");
             return Task.CompletedTask;
         }
 
