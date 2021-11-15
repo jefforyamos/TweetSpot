@@ -67,8 +67,8 @@ namespace TweetSpot.Models
         }
 
         [Theory]
-        [InlineData("300", 300)] 
-        [InlineData("400", 400)] 
+        [InlineData("300", 300)]
+        [InlineData("400", 400)]
         public void SpeedReportIntervalCount_EnvOverride_ShouldMatchEnv(string envSpecifiedValue, int expectedInterval)
         {
             var envConfig = new Mock<IConfiguration>();

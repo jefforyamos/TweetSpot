@@ -1,8 +1,8 @@
 ﻿using MassTransit;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
-using TweetSpot.ServiceBus.Events;
 using TweetSpot.Models;
+using TweetSpot.ServiceBus.Events;
 
 namespace TweetSpot.ServiceBus.Consumers
 {

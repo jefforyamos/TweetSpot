@@ -70,7 +70,7 @@ namespace TweetSpot.BackgroundServices
                 // catch block here to detect intentional shutdown catches via OperationCancelledException timeout exceptions from the HTTPClient
                 catch (Exception e)
                 {
-                    if( stoppingToken.IsCancellationRequested && e is OperationCanceledException)
+                    if (stoppingToken.IsCancellationRequested && e is OperationCanceledException)
                     {
                         _logger.LogInformation($"{nameof(FeedBackgroundService)} received notice to shut down.");
                     }

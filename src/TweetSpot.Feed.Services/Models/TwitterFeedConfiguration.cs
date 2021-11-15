@@ -38,7 +38,7 @@ namespace TweetSpot.Models
             if (configValue != null && TimeSpan.TryParse(configValue, out var parsedValue))
             {
                 if (parsedValue <= ClientTimeoutMaximumAllowed) return parsedValue;
-                if ( int.TryParse(configValue, out var intResult) ) return TimeSpan.FromSeconds(intResult);
+                if (int.TryParse(configValue, out var intResult)) return TimeSpan.FromSeconds(intResult);
             }
             return default;
         }
@@ -46,7 +46,7 @@ namespace TweetSpot.Models
         internal static int? DetermineStreamBufferSize(IConfiguration configuration)
         {
             var configValue = configuration[EnvironmentConfigKeys.StreamBufferSizeInKb];
-            if(configValue != null && int.TryParse(configValue, out var intResult) )
+            if (configValue != null && int.TryParse(configValue, out var intResult))
             {
                 return intResult;
             }

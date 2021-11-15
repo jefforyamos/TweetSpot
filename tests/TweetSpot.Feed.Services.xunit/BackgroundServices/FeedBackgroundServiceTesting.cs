@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Moq;
 using System;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,9 +14,6 @@ using TweetSpot.ServiceBus.Commands;
 using TweetSpot.ServiceBus.Events;
 using Xunit;
 using Xunit.Abstractions;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using System.Linq;
 
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
 

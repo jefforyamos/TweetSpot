@@ -1,5 +1,4 @@
 ﻿using System;
-using TweetSpot.Exceptions;
 
 namespace TweetSpot.Models
 {
@@ -13,7 +12,7 @@ namespace TweetSpot.Models
         /// </summary>
         string TwitterBearerToken { get; }
 
-  
+
         /// <summary>
         /// The Uri that should be called by the service
         /// </summary>
